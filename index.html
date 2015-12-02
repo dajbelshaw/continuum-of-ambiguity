@@ -4,41 +4,56 @@
   <!-- document meta -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
 
   <meta name="description" content="">
-  <meta name="author" content="mozilla">
+  <meta name="author" content="Doug Belshaw and Steve Higgins>
 
   <!-- styles -->
-  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- title -->
-  <title>Webmaker Whitepaper</title>
+  <title>Digital literacy, digital natives, and the continuum of ambiguity</title>
+  <style type="text/css" media="screen">
+ * {
+   margin: 0;
+   padding: 0;
+ }
+
+ div#banner {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #EEE;
+   width: 100%;
+ }
+ div#banner-content {
+   width: 800px;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid #000;
+ }
+ div#main-content {
+   padding-top: 70px;
+}
+</style>
 </head>
 <body data-spy="scroll" data-taget=".page-menu">
-  <nav class="navbar navbar-default navbar-webmaker">
-    <div class="container">
-      <div class="navbar-header">
-        <a href="https://webmaker.org/en-US" class="logo webmaker-logo">
-          <img src="https://webmaker.org/img/logo.png">
-          <span class="sr-only">Go to webmaker.org</span>
-        </a>
+
+  <div id="banner">
+      <div id="banner-content">
+      Check out <a href="http://www.slideshare.net/dajbelshaw/digital-literacy-dead-metaphors-and-a-continuum-of-ambiguity">Doug's recent presentation</a> on this topic!
       </div>
-
-      <ul class="nav navbar-nav navbar-right">
-        <li class="hidden-xs"><a href="https://www.mozilla.org/" id="tabzilla">mozilla</a></li>
-      </ul>
     </div>
-  </nav>
-
+    
   <main>
     <article>
       <header class="jumbotron">
         <div class="container">
           <div class="row">
             <div class="col-md-12 title">
-              <h1>Why Mozilla cares about Web Literacy</h1>
+              <h1>Digital literacy, digital natives, and the continuum of ambiguity</h1>
+              <p>by Doug Belshaw &amp; Steve Higgins</p>
             </div>
           </div>
         </div>
@@ -46,331 +61,192 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-sm-2 hidden-xs" id="page-menu">
-            <ul class="nav" >
-              <li class="active"><a href="#introduction">Introduction</a></li>
-              <li><a href="#the-problem">The Problem</a></li>
-              <li><a href="#web-literacy">Web Literacy</a></li>
-              <li><a href="#webmaker">Mozilla Webmaker</a></li>
-              <li><a href="#webmaker-tools">Tools</a></li>
-              <li><a href="#webmaker-resources">Resources</a></li>
-              <li><a href="#webmaker-community">Community</a></li>
-              <li><a href="#conclusion">Conclusion</a></li>
-              <li><a href="#call-to-action">Call To Action</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-10 col-sm-offset-2">
+          <div class="col-sm-12">
+            <h2 id="abstract">Abstract</h2>
+
+<p>This paper argues that ‘digital literacy’ is an ambiguous term. Like the term ‘digital native‘ before it, the use of the term ‘digital literacy’ is in the process of passing through three phases of ambiguity: generative, creative, and productive. These terms are not merely vague, but ambiguous in ways originally identified by Empson (1930) and subsequently augmented by Robinson (1941) and Abbott (1997). A model is developed which helps to explain the shift in usage of digital literacy from a ‘generatively ambiguous’ term to one which is (or will be) ‘productively ambiguous’.
+</p>
             <h2 id="introduction">Introduction</h2>
+            <blockquote>The Hatter opened his eyes very wide... but all he said was, `Why is a raven like a writing-desk?'<br>
+`Come, we shall have some fun now!' thought Alice. `I'm glad they've begun asking riddles. -- I believe I can guess that,' she added aloud.<br>
+`Do you mean that you think you can find out the answer to it?' said the March Hare.<br>
+`Exactly so,' said Alice.<br>
+`Then you should say what you mean,' the March Hare went on.<br>
+`I do,' Alice hastily replied; `at least--at least I mean what I say--that's the same thing, you know.'<br>
+`Not the same thing a bit!' said the Hatter. `You might just as well say that "I see what I eat" is the same thing as "I eat what I see"!'<br>
+<p align="right"><em>(Lewis Carroll, Alice’s Adventures  in Wonderland)</em></p></blockquote>
 
-            <blockquote>
-              <p>“[O]ur world changed in April 1993 when the Mosaic 1.0 browser was released to the general public. We need new forms of education. We need to reform our learning institutions, concepts, and modes of assessment for our age. Now, anyone with access to the World Wide Web can go far beyond the passive consumer model to contribute content on the Web. We can customize and remix, alone or in collaboration with others, located anywhere on the Web. That Do-It-Yourself potential for connected, participatory, improvisational learning requires new skills, what many are calling new “literacies”.”</p>
-              <cite> – Davidson, 2012</cite>
-            </blockquote>
+<p>We are surrounded by ambiguity and vagueness in everyday life. ‘Ambiguity’ is defined by the Oxford English Dictionary as the ‘capability of being understood in two or more ways’ whereas if something is ‘vague’ it is ‘couched in general or indefinite terms’ being ‘not definitely or precisely expressed’ (OED no date). Given the above definitions, the two terms are very closely linked. Empson (1930), for example, does not draw a distinction between them, setting out seven types of ambiguity of which several could be argued to be examples of ‘vagueness’.</p>
 
-            <p>Founded in 1998, Mozilla is a global community of technologists, teachers and makers working together to keep the Internet<sup id="fnref-1"><a href="#fn-1">1</a></sup> open, accessible and editable. We collaborate on a global basis to ensure everyone can be informed contributors and creators of the web. This act of human collaboration across an open platform we believe to be essential to individual growth and our collective future.</p>
-            <p>Mozilla helps people develop web literacy: we help them build, not just consume, the technology, media and information that makes up the web. Whether through the thousands of volunteers who write code for Firefox or the growing community that is designing courses for teaching the web, Mozilla strives for an Internet that is:</p>
+<p>We argue in this paper that Empson’s seven types of ambiguity form a continuum through which terms may pass. This continuum has three reasonably-distinct parts, from the most ambiguous to the least ambiguous: generative ambiguity, creative ambiguity and productive ambiguity. We argue that the use of the term ‘digital literacy’ has changed since it was popularised by Paul Gilster (1997) but that it remains mid-way through this continuum of ambiguity. The term ‘digital native’, by way of contrast, is further along this continuum, despite it being a younger term.</p>
 
-            <div style="text-align:center;margin: 2em auto" class="hidden-xs">
-              <div class="hexagon white" style="font-size:200px;">
-                <div class="content">
-                  <div class="header">Knowable</div>
-                  <p>It’s transparent – we can see it and understand it.</p>
-                </div>
-              </div><br>
-              <div class="hexagon yellow" style="font-size:200px;margin-top:0.06em;margin-right:0.06em;">
-                <div class="content">
-                  <div class="header">Interoperable</div>
-                  <p>It presents opportunity <br>to play and innovate.</p>
-                </div>
-              </div>
-              <div class="hexagon blue" style="font-size:200px;margin-top:0.06em;">
-                <div class="content">
-                    <div class="header">Ours</div>
-                    <p>It’s open to everyone <br>and we define it.</p>
-                </div>
-              </div>
-            </div>
+<p>The continuum of ambiguity is given in diagrammatic form in the <a href="#appendix">Appendix</a> with a much-simplified version given below. Ambiguous terms suffer an imbalance in the denotative (surface-level) information and connotative (symbolic) information conveyed to individuals. As the usage of terms becomes less ambiguous they can be seen as moving towards the right of the overlap in the diagram:</p>
 
-            <ul class="visible-xs">
-              <li><strong>Knowable:</strong> it’s transparent – we can see it and understand it</li>
-              <li><strong>Interoperable:</strong> it presents opportunity to play and innovate</li>
-              <li><strong>Ours:</strong> it’s open to everyone and we define it</li>
-            </ul>
+<img src="images/venn.png" alt="Ambiguous terms and phases of ambiguity" style="max-width:800px;" width="100%">
 
-            <p>The development of Mozilla products relies upon community involvement and contribution. We are part of a broader alliance of organizations including, for example, foundations like the <a href="https://www.eff.org/">Electronic Frontier Foundation</a>, the <a href="http://www.macfound.org/">MacArthur Foundation</a>, <a href="http://www.sloan.org/">Sloan Foundation</a>, and <a href="http://www.knightfoundation.org/">Knight Foundation</a>. In addition, we work with <a href="http://hivelearningnetwork.org/">Hive Learning Network</a> members such as libraries, museums, and non-profits. Mozilla also works on a number of levels to keep the web as an open platform for innovation.</p>
+<p>With reference to the above diagram, we identify three distinct, but overlapping parts of the continuum of ambiguity: generative, creative, and productive. We will explore each of these in turn.</p>
 
-            <h2 id="the-problem">The Problem</h2>
-            <p>Since the mid-1990s more and more products, services and scenes from everyday life have moved online. This has led to many benefits, such as personal and business interactions being augmented and improved web-based communication. However, the Open Web that Mozilla believes in so strongly is now under attack from a variety of forces.</p>
-            <p>One of these forces is the tendency of commercial providers towards <em>silos</em>. In contrast, Mozilla believes that <strong>the web is the platform</strong>. By this we mean that, through adherence to open standards and protocols, people and organizations can work together to interact, exchange and trade using a shared platform. Closed, proprietary platforms are silos that limit user choice.</p>
 
-            <div class="well" id="silos">
-              <h3>How Mozilla fights silos</h3>
-              <ul>
-                <li>On the web browser level through <a href="https://www.mozilla.org/en-US/firefox">Firefox</a>. Users now have a choice between major web browsers - all compatible with open standards.</li>
-                <li>On the mobile operating system level with <a href="http://www.mozilla.org/en-US/firefox/os/">FirefoxOS</a>. Instead of closed ‘app stores’, users can download and create web apps from anywhere on the web.</li>
-                <li>On the wider ecosystem level by developing new, open technologies and protocols that are then used by other providers. Examples of this include <a href="http://en.wikipedia.org/wiki/Do_Not_Track">Do Not Track</a> and <a href="http://en.wikipedia.org/wiki/WebGL">WebGL</a>.</li>
-              </ul>
-            </div>
 
-            <p>Another force attacking the Open Web is that of <em>elegant consumption</em>. Well-designed interfaces that delight and surprise us are to be encouraged, but when they are locked down, when there is no way to ‘view source’, then we become trapped as mere consumers of other people’s content. This has repercussions not only for accessibility and localization, but for our very freedom on the web.</p>
-            <p>Many people use the web comfortably and intuitively on a daily basis for both work and leisure. Doing so, nevertheless, requires an understanding of how to both read and edit the web. Just as with traditional literacy, this ‘web literacy’ is something that people can get better at over time. The problem is that there has never been consensus around what constitutes ‘web literacy’. Just what is it that people should be getting better at to avoid being stuck in the trap of elegant consumption?</p>
+            <h2 id="generative">Generative ambiguity</h2>
 
-            <h2 id="web-literacy">Web Literacy</h2>
-            <p>Mozilla understands web literacy to be the skills and competencies required to read, write and participate effectively on the web. One of the problems with attempting to teach and learn web literacy has been the lack of an agreed ‘map of the territory’ from which to build resources and curricula. Other candidate terms such as ‘digital literacy’ and ‘information literacy’ seem too wide-ranging and ambiguous to adequately cover the web.<sup id="fnref-2"><a href="#fn-2">2</a></sup> Possible alternatives such as ‘media literacy’ and ‘computational thinking’ certainly <em>overlap</em> with web literacy, but there is something sufficiently unique about ‘web literacy’ to be worth of attention.</p>
-            <p>There have been recent arguments within the world of educational technology and beyond for teaching everyone to ‘code’. While Mozilla believes this to be important, it is only one part of a wider set of skills and competencies that are required to live and work on the web. In order to underpin Mozilla’s work, and to provide a map of the territory for others to use, we have worked with the community to create a <a href="https://webmaker.org/literacy">Web Literacy Map</a>:</p>
+            <p>Aristotle believed he had an answer to the difficulties presented by ambiguity. “Since we cannot introduce the realities themselves into our discussions,” he stated, “but have to use words as symbols for them, we suppose that what follows in the words will follow in the realities too.” The problem is that “whereas words and the quantity of sentences are limited, realities are unlimited in number” (Aristotle, SE 1, 165a6 ff, quoted in Robinson, 1941, p.144). This, then, is the first part of the continuum: an individual gives a name to a nebulous collection of thoughts and ideas. This left-hand side of the continuum is most closely related to vagueness; we call this part Generative ambiguity.</p>
 
-            <p class="text-center" id="weblitmap"><a href="https://webmaker.org/resources"><img style="text-align:center; margin:1em auto; max-width:640px;" src="assets/img/weblitmap-1.1.png" alt="Mozilla Web Literacy Map competency grid" class="img-responsive"></a></p>
+            <p>‘Zeugmas’ are an example of the kinds of terms that may reside within Generative ambiguity. These are figures of speech that join two or more parts of a sentence into a single noun. With our example of ‘digital literacy,’ for example, it is unclear whether the emphasis is upon the ‘digital’ (and therefore an example of a Prozeugma) or upon the ‘literacy’ (and therefore a Hypozeugma). Is one part of the term stressed more than the other? If so, is the stress upon the ‘digital’ part or the ‘literacy’ part of ‘digital literacy’? No aspect of the term is fixed within the part of the ambiguity continuum we have named Generative ambiguity. This leads to definitions of terms that are so ambiguous as to be almost vague in the way discussed in the introduction.</p>
 
-            <p>The Web Literacy Map was created in consultation with a community of stakeholders from formal and informal education, as well as industry. The above images shows the competency grid. Under each competency there are a subset of skills that Mozilla and the community believe it is important to develop. For example, ‘Taking steps to secure non-encrypted connections’ sits as one of five skills that underpin the ‘Privacy’ competency.</p>
-            <p>This is a <em>descriptive</em> rather than prescriptive map. That is to say people and organizations can align with it no matter what context they are working in - and no matter what level they are working at. The Web Literacy Map will evolve and mature along with the web itself, and in consultation with a growing community of stakeholders.</p>
-            <p>One specific way in which Mozilla is using the Web Literacy Map is to inform our Webmaker project. This consists of the tools, resources and community necessary for mentors to teach the web.</p>
+<p>The boundary between Generative ambiguity and Creative ambiguity comes through what Robinson (1941) identifies as ‘relational univocity.’ This is a “reaction of the context with the old sense” (Robinson, 1941, p.149) which destabilises the existing meaning of a word through use in a new context (or being yoked with another in a novel way). Robinson cites Aristotle’s explanation of ‘healthy’ as an example of relational univocity: ‘healthy’ can be applied to things as diverse as ‘healthy’ exercise (causitive), a ‘healthy’ complexion (indicative), and ‘healthy’ roses (possessive) (Robinson, 1941, p.143). “[E]ach particular case has to be learned from the context,” states Robinson, with relational univocity being “a bond that holds together the various meanings of an ambiguous word” (Robinson, 1941, p.143).</p>
 
-            <h2 id="webmaker">Mozilla Webmaker</h2>
-            <p>Mozilla’s work is underpinned by a philosophy that we learn best through doing and making. While our thinking is influenced and informed by the works of academics in related fields, we’re interested in practical action. We're focused on helping people become more sophisticated in writing the web, participating in communities that explore web literacy and become advocates for the value and need for an <a href="http://en.wikipedia.org/wiki/Open_Web">open web</a>.</p>
-            <p>Learning by making is not a new idea. This concept is fundamental to the work of foundational thinkers such as Froebel, Dewey, and Papert (amongst many others). For example, Froebel encouraged creative play using wooden blocks as a pedagogical tool; Dewey advocated for experiential learning; and Papert updated ideas around ‘hands-on’ learning for the computer age. Learning theories such as <a href="http://en.wikipedia.org/wiki/Constructivism_(learning_theory)">Constructivism</a> and <a href="http://en.wikipedia.org/wiki/Connectivism">Connectivism</a> influence our work around Webmaker and web literacy — along with, importantly, a sense of play.</p>
-            <p>There are many communities that are interested in playful making as learning approaches, where learners don’t just consume, they produce. Maker culture is an extension of do-it-yourself (DIY) culture focused on the creative use of technology coupled with a strong ethos around grassroots invention and learning. Examples where making and production is common as a part of learning include the MIT’s Scratch game making community and Arduino enthusiasts who create with open source electronics prototyping hardware. Mozilla’s work is situated within this landscape of maker culture with an explicit commitment to the open web. Central to this is a culture of ‘tinkering’; the <a href="http://archive.makezine.com/04/ownyourown/">Maker Manifesto</a> states: “if you can’t open it, you don’t own it.” Many makers are amateurs — enthusiasts and hobbyists interested in the process as well as the product. An interest in building and supporting the open web is core to many Mozilla projects, including Webmaker.</p>
-            <p>We understand ‘webmakers’ to be those participating in the culture of building the social and technical elements required for an open web. At the same time, we use ‘Webmaker’ to refer to the Mozilla website as well as the community that has mobilized in alignment with it. We recognize that there are also an array of webmaker practices which occur with and without Mozilla. Therefore, webmakers may complete various activities, including building content for the web through remix or coding, participating in discussions online, or teaching web literacy skills in their local communities. The profiles below are just a few examples of how some individuals use Webmaker and other resources in different contexts:</p>
 
-            <div class="row well" id="webmaker-mentors">
-              <div class="col-md-3">
-                <img class="webmaker-mentors" src="assets/img/amy.jpg" alt="Amy"><br><a href="http://www.amyburvall.com/">Amy</a> is an educator and lyricist/performer in Hawaii, USA. She uses Webmaker tools to <a href="https://amyburvall.makes.org/popcorn/1fwa">teach remix culture</a> and community participation to her students, who participate in, and contribute to, the open web.
-              </div>
+            <h2 id="creative">Creative ambiguity</h2>
 
-              <div class="col-md-3">
-                <img class="webmaker-mentors" src="assets/img/raj.jpg" alt="Gauthamraj"><br><a href="http://www.mozraj.com/">Gauthamraj</a> is a mentor of mentors in Erode, India. He went from teaching some web basics to his family, to mentoring someone 1:1, to bringing a whole cohort of new mentors into the Mozilla Webmaker community.
-              </div>
+<p>Terms that are defined in such a way so as fit with the part of the continuum we identify as Creative ambiguity are less ambiguous than those within Generative ambiguity. Empson’s fourth type of ambiguity is a good example of how a term such as ‘digital literacy’ can be ambiguous in the Creative ambiguity part of the continuum. Such a situation happens, he states, when “two or more meanings of a statement do not agree among themselves, but combine to make clear a more complicated state of mind in the author” (Empson, 1930, p.133). It is “the most important aspect of a thing, not the most complicated” of which we are conscious, he continues, as “the subsidiary complexities, once they have been understood, merely leave an impression in the mind” (Empson, 1930, p.133).</p>
 
-              <div class="col-md-3">
-                <img class="webmaker-mentors" src="assets/img/faye.jpg" alt="Faye"><br><a href="http://about.me/fayetandog">Faye</a> is an industrial engineering graduate from the Philippines. She ran Maker Parties for her fellow students to teach web literacy skills while at university and has continued to do so. Some of her Maker Party events have focused on <a href="https://reps.mozilla.org/e/womoz-2013-maker-party/">women and girls</a> in technology.
-              </div>
+<p>Within the part of the continuum we name Creative ambiguity, then, one aspect of the term is fixed, much in the way a plank of wood nailed to a wall would have 360-degrees of movement around a single point. This point of reference allows others to co-construct meaning and the term to enter a wider community for discussion and debate. As Empson suggests, if the term is re-formulated in a way that is slightly less ambiguous, then this is then what he calls the third type of ambiguity. This happens when “two ideas, which are connected only by being both relevant in the context, can be given in one word simultaneously” (Empson, 1930, p.102). The ambiguity persists due to the tension caused by “the sharpness of distinction between the two meanings” (Empson, 1930, p.102). This could cause individuals and communities to ‘talk past one another’ if, for example, one used ‘digital’ as a substitute for ‘digital lifestyle’ whilst another used ‘digital’ as shorthand for ‘digital hardware and software’.</p>
 
-              <div class="col-md-3">
-                <img class="webmaker-mentors" src="assets/img/andy.jpg" alt="Andy"><br><a href="http://socialinnovation.ca/community/members/andy-forest">Andy</a> co-founded a makerspace for kids in Toronto, which is a member of Hive Toronto, a digital literacy network stewarded by Mozilla. Andy teaches skills like 3D printing, electronics and webmaking while wearing a funky red lab coat.
-              </div>
-            </div>
+<p>As with ‘relational univocity,’ there is a boundary between the part of the ambiguity continuum we have marked out as Creative ambiguity and that which we have called Productive ambiguity. In this case the term is what Robinson (1941) names ‘sliding ambiguity.’ This occurs when a term covers a wide area and refers alternately to larger and smaller arts of that area. Such a term embraces a big complex of conceptions, put together under one word because we feel them to be somehow connected, or because we have not clearly distinguished them (Robinson, 1941, p.142).</p>
 
-            <h3 id="webmaker-tools">Webmaker Tools</h3>
-            <p>Mozilla collaborates with many makers, mentors and educators around the world. The idea to create tools to encourage webmaking stems back to the first <a href="http://mozillafestival.org/">Mozilla Festival</a>, held in Barcelona in 2010. This event demonstrates many of the cultural and civic aspects of participating in building the open web. Since that first festival, Mozilla has continually iterated upon the ideas originated there to create a suite of Webmaker tools to help improve users’ web literacy skills. <a href="https://webmaker.org/">Webmaker.org</a> currently houses three tools: X-Ray Goggles, Thimble, and Popcorn Maker (with a fourth tool Appmaker, close to integration, and more proposed for the future). Each of these open source tools is used within a web browser and end-users can publish their completed projects to Mozilla servers. Because the tools are open source, community members can contribute to their development and ‘fork’ them for their own purposes if necessary.</p>
+<p>Whilst a level of consensus can exist within a given community within this Creative ambiguity part of the continuum, it nevertheless remains highly contextual. It is dependent, to a great extent, upon what is left unsaid - especially upon the unspoken assumptions about the “subsidiary complexities” that exist at the level of impression. The unknown element in the ambiguity (for example, time, area, or context) means that the term cannot ordinarily yet be operationalised within contexts other than communities who share prior understandings and unspoken assumptions.</p>
 
-            <section id="webmaker-tools-descriptions">
-              <div class="row clearfix">
-                <div class="col-sm-6">
-                  <img src="assets/img/xraygoggles.png" alt="X-Ray Goggles Logo">
-                  <h4>X-Ray Goggles</h4>
-                  <a href="https://goggles.webmaker.org">goggles.webmaker.org</a>
-                  <p>X-Ray Goggles (or Goggles) is a browser plug-in that allows an end-user to see the building blocks of the web. It shows the underlying HyperText Markup Language (HTML) and Cascading Style Sheets (CSS) of the web page being visited. With Goggles, users can change the code and publish their version of the page. As an example, when Goggles is activated a user can change the headline of the site if it is contained in &quot;heading 1&quot; or an &quot; &lt;h1&gt;&quot; set of HTML tags. Popular X-Ray Goggles projects for new users include remixing the homepage of a newspaper or school.</p>
-                </div>
+            <h2 id="productive">Productive ambiguity</h2>
 
-                <div class="col-sm-6">
-                  <img src="assets/img/thimble.png" alt="Thimble Logo">
-                  <h4>Thimble</h4>
-                  <a href="https://thimble.webmaker.org">thimble.webmaker.org</a>
-                  <p>Thimble is an HTML editor and preview pane, which displays in a single browser window. To the end-user, the code appears in the left pane, and the preview of the page of the rendered web page in the right. Thimble excels at allowing users to create a new webpage or alter a one page project. Popular Thimble projects at Webmaker for new users include remixing an internet meme, a magazine cover, or comic strip. Projects from Thimble can be published to Mozilla servers and shared.</p>
-                </div>
-              </div>
+<p>In order for an ambiguous term to be operationalised, in order for it to be able to ‘do some work’ and make a difference in practice, then people must redefine it in such a way as to enter the part of the continuum we name Productive ambiguity. This is the least ambiguous part of the continuum, an area in which more familiar types of ambiguity such as metaphor are used (either consciously or unconsciously) in definitions. Empson defines the second type of ambiguity, for example, as occurring when “two or more meanings are resolved into one” (Empson, 1930, p.48). This second type of ambiguity (which Abbott (1997) calls ‘ambiguity of locus’) is the most commonly-observable example of ambiguity, believes Empson. Examples tend to exhibit a directness of feeling whilst the concept behind the feeling is ambiguous. The concept may exhibit either psychological or logical complexity (or both) but this is masked by the seemingly-intuitive nature of the term. Abbott explains that this type of ambiguity springs from one thing being taken as indicating something about another. He gives the example of divorce rates being taken to indicate something about the status of ‘the family,’ or the erosion of ‘community stability,’ for example. “The ambiguity about the meaning of the indicator arises in part through the inclusion of families within communities” (Abbott, 1997, p.362) – in other words, one ambiguous term is situated within another.</p>
 
-              <div class="row clearfix">
-                <div class="col-sm-6">
-                  <img src="assets/img/popcornmaker.png" alt="Popcorn Maker Logo">
-                  <h4>Popcorn Maker</h4>
-                  <a href="https://popcorn.webmaker.org">popcorn.webmaker.org</a>
-                  <p>Popcorn is a multimedia editor that works out of a browser window. Popcorn was created to be an HTML5 media framework, to demonstrate that the web is interoperable and media elements can be recombined. Within Popcorn, the user sees a timeline where they can add video clips, sound files, images, animated Graphics Interchange Format (GIF) files, Wikipedia pages, Google maps and more. These can be combined to remix and add commentary to existing media. Common first projects in Popcorn include a video to introduce oneself or to tell a story.</p>
-                </div>
+<p>The very least ambiguous type of ambiguity in the continuum is Empson’s first type. It is straight metaphor, something Empson calls “the fundamental situation” whereby “a word or a grammatical structure is effective in several ways at once” (Empson, 1930, p.2). The term, continues Empson, is not stressed in relation to the rest of the sentence “but as if to fill out the sentence... signal[ling] to the reader what he is meant to take for granted” (Empson, 1930, p.3). Robinson names this Naive ambiguity, citing Plato’s Socratic dialogues as an example:</p>
 
-                <div class="col-sm-6">
-                  <img src="assets/img/appmaker.png" alt="Appmaker Logo">
-                  <h4>Appmaker</h4>
-                  <a href="https://appmaker.mozillalabs.com/">apps.webmaker.com</a>
-                  <p>Appmaker is an easy-to-use mobile app creator. Based on burgeoning open web technology, Appmaker allows end-users to snap together mobile apps with lego-like bricks of functionality. Since the Appmaker ecosystem is built for the web, Appmaker apps work anywhere the web does — including the smartphone in your pocket! While it is possible to publish, share, and use Appmaker apps, the product is still at an experimental stage and not yet integrated into Webmaker.</p>
-                </div>
-              </div>
-            </section>
+<blockquote>“The early dialogues frequently represent Socrates as seeking for definitions of terms. Now, before we seek to define a term we should make sure that it has only one sense, or at least which of its senses we are trying to define. But Socrates never does this in the Platonic dialogues. In every case he puts the question and proceeds to look for an answer with the most perfect coincidence that the word means the same thing every time it is used.” (Robinson, 1941, p.140)</blockquote>
 
-            <h3 id="webmaker-resources">Webmaker Resources</h3>
-            <p>In addition to the tools, there are resources to assist those educators and mentors who wish to teach the web. These Open Educational Resources (OERs) include complete <a href="https://webmaker.org/teach">Teaching Kits</a> as well as more granular resources to make it easier to teach web literacy. The customizability and modularity of the OERs are their major value. The OERs are created in the open, so the audience has direct communication with the content creators and a direct influence on the content itself. The learning materials can be both customized and personalized to suit the expertise of individual mentors. The customizability and modularity of OERs are their major value. As one brief example, the <a href="https://mozteach.makes.org/thimble/storycamp-resources">StoryCamp</a> kit (codesigned with <a href="http://www.bavc.org/">BAVC</a>) assists facilitators to empower youths wanting to tell their stories online. In the future, this kit could be remixed to empower young people to tell stories about collaboration, privacy or other web competency areas. Mozilla believes that the use of the Webmaker tools and teaching kits within an online training environment helps facilitate participatory cultures where there are “relatively low barriers to artistic expression and civic engagement, strong support for creating and sharing creations, and some type of informal mentorship” (Jenkins, et al., 2009, p. xi).</p>
+<p>This is the same type of ambiguity that Abbott (1997) names Semantic ambiguity, arising from the assumption that one thing ‘means’ another and that this meaning is stable. With Socrates, ambiguity surrounding the meaning of terms is seen as a bad thing, as something to be avoided. Instead, Abbott presents Semantic ambiguity, the first type of ambiguity, as a fact of life. Years in school, for example, can ‘mean’ education “in the sense that... time spent in school results in more or less monotonic increase in education”. At the same time, however, years in school also ‘means’ “exposure to popular culture [and] bureaucracy” as well as “reduced time available for criminal activity” (Abbott, 1997, p.361). It is a “simple type of multiple meaning... a situation where one fact means several things at once without those things resolving into any one meaning” (Abbott, 1997, p.361-2).</p>
 
-            <h3 id="webmaker-community">Webmaker Community</h3>
-            <p>In order to use our Webmaker tools and resources effectively to spread our goal of teaching the world the web, Mozilla has an active and growing community. Individuals often join because of an interest to learn something specific covered by the Web Literacy (such as ‘remix’) that they want to apply in their daily lives, workplaces or communities.</p>
-            <p>Our community members seek to:</p>
+<p>Terms within the Productive part of the ambiguity continuum have a stronger denotative element than in the Creative and Generative phases. Stability is achieved through alignment, often due to the pronouncement of an authoritative voice or outlet. This can take the form of a well-respected individual in a given field, government policy, or mass-media convergence on the meaning of a term. Such alignment allows a greater level of specificity, with rules, laws, formal processes and guidelines created as a result of the term’s operationalisation. Movement through the whole continuum is akin to a substance moving through the states of gas, liquid and solid. Generative ambiguity is akin to the ‘gaseous‘ phase, whilst Creative ambiguity is more of a ‘liquid‘ phase. The move to the ‘solid’ phase of Productive ambiguity comes through a process akin to a liquid ‘setting’.</p>
 
-            <ul>
-              <li><strong>level up</strong> their web literacy</li>
-              <li><strong>build</strong> and <strong>share</strong> tools for teaching</li>
-              <li><strong>gain</strong> peers and networks of practice</li>
-              <li><strong>participate</strong> in coordinated actions</li>
-              <li><strong>identify</strong> with a movement that's globally leveraged and locally contextualized</li>
-            </ul>
+            <h2 id="digital-literacy">Digital literacy and digital natives</h2>
 
-            <p>In January 2013, Mozilla launched our first iteration of the Webmaker Community. We began testing strategies and programs to catalyze a global web literacy movement with local roots. Teaming up with existing initiatives such as the Hive Learning Network and the Maker Party campaign, we formed a ‘big tent’ initiative inviting organisations to be part of a global movement. Through Hive Learning Networks, stewarded by Mozilla in New York, Chicago and Toronto, organizations were already incubating transformative learning experiences for youth, by applying the principles of connected learning. At the same time, we have given individuals an opportunity to join the Webmaker Community and act as ‘context localizers’ for our tools and resources. We use multiple channels for this including social media (Facebook, Google+, Twitter) and a weekly community call.</p>
-            <p>We also offer a training for new mentors who want to learn the theory and practice of teaching the web. Through a blend of online and offline training modules, we continue to test, co-design and support our global community to improve their skills and to connect with one another. We empower ‘Super Mentors’ from the Webmaker community to train new mentors looking to learn the theory and practice of teaching the web. We test new tools, prototypes and resources through the <a href="https://training.webmakerprototypes.org">training program</a>, as well as recognise contribution through <a href="https://webmaker.org/badges/webmaker-super-mentor">Webmaker badges</a>. The array of Webmaker community building approaches assist us in our attempts to spread and scale contributions to Mozilla.</p>
+<p>Where do definitions of ‘digital literacy’ currently reside on this continuum? Have definitions, much like definitions of ‘digital native’ been formulated in progressively less ambiguous ways, moving from Generative ambiguity through Creative ambiguity and into Productive ambiguity? We would suggest not. Whereas the term ‘digital native’ is akin to what Richard Rorty would define as ‘dead metaphor’ (formulaic and unproductive), the term ‘digital literacy’ continues to be defined and re-defined in new and innovative ways.</p>
+
+<p>The early ‘academic’ writing about the concept of ‘digital natives’ was not peer-reviewed. It often appeared in magazines for teachers and librarians and featured a journalistic or even hyperbolic style:</p>
+
+<blockquote>“If television was a defining influence over the boomer generation, what is shaping the generation of students entering higher education today? A growing number of educators are recognizing that this generation has been heavily influenced by the pervasive digital media that has surrounded them literally since birth. Marc Prensky coined the term “Digital Native” (Presky, 2001) <em>[sic]</em> to describe this generation. The moniker communicates clearly that these are not subtle changes to have occurred, but instead this is a generation of students who act - and perhaps even think - differently than those that are educating them - the so-called “Digital Immigrants.” (Gaston, 2006, p.1)</blockquote>
+
+<p>More recent peer-reviewed papers have pointed out the lack of an evidence base for Prensky’s claims (Bayne & Ross 2007; Bennett, Maton & Kervin 2008; Helsper & Enyon 2010; Bennett & Maton 2010). Given the devastating critique - especially that of Bennett, Maton & Kervin (2008) who equated ‘digital native’ with a ‘moral panic’ - the term is a Rortyian dead metaphor in the world of serious academia. It remains, however, a widely-cited term in magazines for teachers and librarians.</p>
+
+<p>‘Digital literacy’ is also a term with different usage depending on the community within which it is used. The difference here, however, is that it is a term that originated in academic research and has filtered through to practitioners and other interested parties. It is a term that is used in various ways depending upon context: some definitions equate ‘digital literacy’ with computer skills, whilst others see it involving the kind of criticality more usually ascribed to ‘media literacy.’ Gilster, in Digital Literacy, for example, defines the term as “the ability to understand and use information in multiple formats from a wide range of sources when it is presented via computers” (Gilster, 1997, p.215). This could be seen as an example of the sixth type of ambiguity within the overall continuum as, in defining the ambiguous term, more ambiguity is introduced. What counts as a ‘format’, a ‘source’, or even a ‘computer’ for Gilster?</p>
+
+<p>A common way in which ‘digital literacy’ is ambiguously-framed is using the concept of ‘relational univocity’ discussed earlier. An example of this is given by ETS (the US Educational Testing Service) which defines digital literacy as:</p>
+
+<blockquote>“[T]he ability to use digital technology, communication tools and/or networks appropriately to solve information problems in order to function in an information society.' (ets.org). It comprises 'the ability to use technology as a tool to research, organize, evaluate, and communicate information, and the possession of a fundamental understanding of the ethical/legal issues surrounding the access and use of information.” (Lankshear, 2006, p.23)</blockquote>
+
+<p>This definition uses ‘technology‘ as shorthand for particular tools, techniques and attitudes of mind and therefore depends upon the reader to fill in the gaps. Another example of this is Erstad’s (2008) attempt at a definition of ‘digital literacy’ which, instead of clarifying the issue, seems to become more ambiguous as each word is added:</p>
+
+<blockquote>"One of the key challenges in [developments of everyday practices] is the issue of digital literacy. This relates to the extent to which citizens have the necessary competence to take advantage of the possibilities given by new technologies in different settings." (Erstad, in Lankshear & Knobel, 2008, p.177)</blockquote>
+
+<p>The definitions of ‘digital literacy’ within the Generative ambiguity part of the ambiguity continuum (represented diagramatically in the <a href="#appendix">Appendix</a>) are unbalanced in favour of the connotative aspect of a term. That is to say they require a great deal of interpretation to make sense and become applicable.</p>
+
+<p>Definitions within the Creative ambiguity part of the continuum, however, are more readily applied. <a href="http://www.microsoft.com/about/corporatecitizenship/citizenship/giving/programs/up/digitalliteracy/default.mspx ">Microsoft’s Digital Literacy Curriculum</a>, for example, states that the goal of digital literacy is:</p>
+
+<blockquote>“to teach and assess basic computer concepts and skills so that people can use computer technology in everyday life to develop new social and economic opportunities for themselves, their families, and their communities."</blockquote>
+
+<p>Whilst potentially-ambiguous concepts such as ‘family,’ ‘community,’ and ‘everyday life’ are included in this definition, they are more concrete than the ‘citizens’ and ‘settings’ Erstad (2008) offers in his definition. Whilst his portmanteau term ‘Electracy’ from an earlier paper (Erstad 2003) did not gain significant traction, this was a less ambiguous term as it comprised “two ideas... connected only by being both relevant in the context” being “given in one word simultaneously” (Empson, 1930, p.102).</p>
+
+<p>Within ‘Creative ambiguity’ the denotative and connotative elements of a term are more balanced. The definition is likely to depend upon attitudes and assumptions held by the majority of the members of a community towards particular concepts upon which it depends. Given the range of ways in which ‘digital literacy’ can be formulated - from basic computer skills to meta-level critical analysis and reflection - many definitions from 1997 to the present day have exhibited Creative ambiguity.</p>
+
+<p>Despite the concept of the ‘digital native’ (2001) being younger than that of ‘digital literacy’ (1997) definitions of the former rather than the latter that are more likely to be found in dictionaries. The Collins English Dictionary, for example, defines a ‘digital native’ as “a person who has been familiar with information technology since childhood”. The strongly-denotative element in such definitions leaves less space for interpretation as, even when metaphors and similies are used, they are likely to be homely or well-used ones. This can be seen in many definitions of ‘digital literacy’ including that given by the European Commission. They stress the importance of using Information and Communications Technologies (ICTs) in everyday life, going on to state:</p>
+
+<blockquote>“To participate and take advantage, citizens must be digitally literate - equipped with the skills to benefit from and anticipate in the Information Society. This includes both the ability to use new ICT tools and the media literacy skills to handle the flood of images, text and audiovisual content that constantly pour across the global networks.” (EC Thematic Portal)</blockquote>
+
+<p>Whilst ‘Information Society’ is itself an ambiguous term, it is made reference to so extensively in the news and policy documents so as to not require separate definition. In addition, the metaphors of a ‘flood’ and a ‘network’ are used so often that they provide cognitive shortcuts for the reader.</p>
+
 
             <h2 id="conclusion">Conclusion</h2>
-            <p>Mozilla’s mission is to keep the Internet open, accessible and editable. We put users first and believe that empowering people to tell their own story online is of the utmost important. To that end, through our Webmaker project we provide the tools, resources, and community for people to teach and learn the web. Underpinning this is the Web Literacy Map, co-created with stakeholders and the community.</p>
-            <p>There is no single, simple way to keep the web as the platform. That is why Mozilla - a global non-profit - is working towards using an array of strategies to build the open web with partners and the community.</p>
-            <p>The webmaker movement is made up of people who teach the web to others over the kitchen table; people who use Webmaker tools in more informal learning settings like community centers or youth groups; people who use Mozilla resources as part of a curriculum in schools and colleges; people who join Mozilla’s community, participating in the creation of open source projects and teaching resources. People like you.</p>
-            <p>Mozilla Webmaker is <em>your</em> project. Be part of it.</p>
 
-            <h2 id="call-to-action">Call To Action</h2>
-            <p>There are many ways to get involved in Mozilla’s Webmaker project, from dipping your toe in the water for the first time through to running large events and helping us with future directions.</p>
-            <ul>
-              <li>Create an account at <a href="http://webmaker.org">webmaker.org</a> and start making the web</li>
-              <li>Attend or host a <a href="https://events.webmaker.org">Maker Party</a></li>
-              <li>Join the <a href="https://lists.mozilla.org/listinfo/webmaker">Webmaker mailing list</a></li>
-              <li>Participate in one of the weeekly <a href="https://wiki.mozilla.org/Webmaker/TeachTheWeb/Calls">#TeachTheWeb community calls</a></li>
-              <li>Follow <a href="http://twitter.com/webmaker">@webmaker</a> on Twitter and use the <a href="https://twitter.com/search?q=%23teachtheweb&amp;src=typd">#teachtheweb</a> hashtag</li>
-            </ul>
+<p>We have argued in this paper that definitions of ambiguous terms can be placed on a continuum of ambiguity informed by the work of Empson (1930), Robinson (1941) and Abbott (1997). Using ‘digital literacy’ as the main example, and the concept of the ‘digital native’ by way of contrast, we have illustrated the various ways in which such terms can be ambiguous. Dividing the ambiguity continuum into three parts (see <a href="#appendix">Appendix</a>) we identified Generative ambiguity as the part where definitions of terms including strongly-connotative elements reside. Those definitions of ambiguous terms more ‘balanced’ between the connotative and denotative elements we saw as fitting within the Creative ambiguity part of the continuum, whilst those with strongly-denotative elements fit within Productive ambiguity.</p>
+
+<p>In passing, we mentioned Rorty’s idea of the ‘dead metaphor’ and suggested that definitions of ambiguous terms may tend, through constant reformulation and redefinition, towards Productive ambiguity. We suggest that further work is required to see whether ‘digital literacy’ follows what may be described as a trajectory similar to that of ‘digital natives’. We also suggest that the model of the continuum of ambiguity may be applicable to other ambiguous terms.</p>
+
+<p>Finally, we note with Empson that ambiguity is itself an ambiguous term:</p>
+
+<blockquote>“Ambiguity itself can mean an indecision as to what you mean, an intention to mean several things, a probability that one or other or both of two things has been meant [or] the fact that a statement has several meanings.” (1930, p.5-6)</blockquote>
+
+<p>Whilst we have sought to make this paper as unambiguous as possible and situate it in the Productive ambiguity part of the continuum, we do not wish to make the <em>reductio ad absurdum claim</em> that all terms are necessarily ambiguous. Ambiguity may surround us in everyday life but an understanding of the continuum we suggest may make the world a little more understandable.</p>
+
           </div>
         </div>
       </div>
       <footer>
         <div class="container">
           <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-              <h2 id="footnotes">Footnotes</h2>
-              <ol>
-                <li id="fn-1">The Internet is a network of computer networks. The World Wide Web [‘web’] is a system of linked resources accessed via the Internet. These resources usually take the form of web pages that are, navigated with a web browser. Anybody with a connection to the internet can access the web and both read and write to it. It is the world’s largest humanly-created resource. <a href="#fnref-1">↩<span class="sr-only">Return to previous position in paper.</span></a></li>
-                <li id="fn-2">For example, the Knight-Mozilla <a href="http://opennews.org/">OpenNews</a> partnership has created an ecosystem of journalists who not only use code to change the way they work, but interact and build on one another’s work using the affordances of web. Likewise, the newly-formed <a href="http://mozillascience.org/">Mozilla Science Lab</a> focuses on the ways in which the science community can make the web work for science. Much of this involves ‘hard’ skills like building things with code, but there are many ‘softer’ skills involved, such as building community and working openly. <a href="#fnref-2">↩<span class="sr-only">Return to previous position in paper.</span></a></li>
-              </ol>
+            <div class="col-md-12 ">
 
-              <h2 id="bibliogtaphy">Bibliography</h2>
-              <p><strong>American Library Association.</strong> (2007). Standards for the 21st Century Learner. <a href="http://www.ala.org/aasl/sites/ala.org.aasl/files/content/guidelinesandstandards/learningstandards/AASL_Learning_Standards_2007.pdf">http://www.ala.org/aasl/sites/ala.org.aasl/files/content/guidelinesandstandards/learningstandards/AASL_Learning_Standards_2007.pdf</a>
-              <ul>
-              <li>A set of standards relating to information literacy for school-age children.</li>
-              </ul>
-              </p>
-              <p><strong>Booth, D.R.</strong> (2012). Peer Participation and Software: What Mozilla Has to Teach Government. <em>The John D. and Catherine T. MacArthur Foundation Reports on Digital Media and Learning.</em> Cambridge, MA: The MIT Press. <a href="http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262514613_Peer_Participation_and_Software.pdf">http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262514613_Peer_Participation_and_Software.pdf</a>
-              <ul>
-              <li>An overview of how Mozilla came into existence and the very open way the organisation works with its community of users and volunteers.</li>
-              </ul>
-              </p>
-              <p><strong>boyd, d. &amp; Hargittai, E.</strong> (2010). Facebook Privacy Settings: Who Cares? First Monday 15(8). <a href="http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3086/2589">http://firstmonday.org/htbin/cgiwrap/bin/ojs/index.php/fm/article/view/3086/2589</a>.
-              <ul>
-              <li>A paper looking at results of a survey challenging assumptions that young people do not care about their online privacy.</li>
-              </ul>
-              </p>
-              <p><strong>Buckingham, D.</strong> (2003). <em>Media Education: Literacy, Learning &amp; Contemporary Culture.</em> Cambridge: Polity Press.
-              <ul>
-              <li>This book looks at changes in media education and in young people’s lives, providing aset of principles on which media curricula should be based.</li>
-              </ul>
-              </p>
-              <p><strong>Coiro, J., Knobel, M., Lankshear, C. &amp; Leu, D. J. (eds.)</strong> (2008). <em>Handbook of research on new literacies.</em> Philadelphia: Erlbaum.
-              <ul>
-              <li>An edited collection of original articles and papers situated at the intersection of literacy and technology. A useful reference.</li>
-              </ul>
-              </p>
-              <p><strong>Castells, M.</strong> (2012). <em>Networks of outrage and hope: Social movements in the Internet age.</em> Cambridge: Polity Press.
-              <ul>
-              <li>In this work, the author explores social movements in the age of the Internet and mobile phones and technologies. Social movements in Tunisia, Egypt, and Occupy Wall Street are explored. </li>
-              </ul>
-              </p>
-              <p><strong>Connected Learning Principles.</strong> (no date).Connected Learning. <a href="http://connectedlearning.tv/connected-learning-principles">http://connectedlearning.tv/connected-learning-principles</a>
-              <ul>
-              <li>Based on the work of Mimi Ito and others, a set of principles for a new pedagogical approach to research and educational practice.</li>
-              </ul>
-              </p>
-              <p><strong>Davidson, C.N. &amp; Goldberg, D.T.</strong> (2010). The Future of Thinking: Learning Institutions in a Digital Age. <em>The John D. and Catherine T. MacArthur Foundation Reports on Digital Media and Learning.</em> Cambridge, MA: The MIT Press. <a href="http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513746_Future_of_Thinking.pdf">http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513746_Future_of_Thinking.pdf</a>
-              <ul>
-              <li>This report investigates how traditional learning institutions can become innovative, flexible, robust, and collaborative "mobilizing networks" and catalysts for change.</li>
-              </ul>
-              </p>
-              <p><strong>Davidson, C.N.</strong> (2012). Why We Need a 4th R: Reading, wRiting, aRithmetic, algoRithms. DMLcentral. <a href="http://dmlcentral.net/blog/cathy-davidson/why-we-need-4th-r-reading-writing-arithmetic-algorithms">http://dmlcentral.net/blog/cathy-davidson/why-we-need-4th-r-reading-writing-arithmetic-algorithms</a>
-              <ul>
-              <li>This post by Cathy Davidson argues that we need to extend traditional notions of literacy to include coding, algorithms, and awareness of network effects.</li>
-              </ul>
-              </p>
-              <p><strong>Davidson, C.N.</strong> (2011). <em>Now you see it: how the brain science of attention will transform the way we live, work, and learn.</em> New York: Viking.
-              <ul>
-              <li>In this book, the author introduces us to those in formal education and business who are opening the doors to new ways  of working and learning.    </li>
-              </ul>
-              </p>
-              <p><strong>Gee, J.P.</strong> (2009). Digital Media and Learning as an Emerging Field, Part I: How We Got Here. <em>International Journal of Learning and Media</em>, 1(2), 13–23.
-              <ul>
-              <li>A paper introducing the concept of 'worked examples' by first introducing the field of digital media and learning through its history.</li>
-              </ul>
-              </p>
-              <p><strong>Ito, M., et al.</strong> (2009). Living and Learning with New Media: Summary of Findings from the Digital Youth Project. <em>The John D. and Catherine T. MacArthur Foundation Reports on Digital Media and Learning.</em> Cambridge, MA: The MIT Press. <a href="http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513654_Living_and_Learning.pdf">http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513654_Living_and_Learning.pdf</a>
-              <ul>
-              <li>This report summarizes the results of a three-year study into how young people are living and learning with new media at home, in after school programs, and in online spaces.</li>
-              </ul>
-              </p>
-              <p><strong>Ito, M., et al.</strong> (2013). Connected Learning: An Agenda for Research and Design. Digital Media and Learning Research Hub. <a href="http://dmlhub.net/publications/connected-learning-agenda-research-and-design">http://dmlhub.net/publications/connected-learning-agenda-research-and-design</a>
-              <ul>
-              <li>This resource provides an overview of Connected Learning as an approach for researchers and practitioners seeking to change education in the United States and beyond. Connected learning is situated at the intersection point of peer-culture, interests, and academics.</li>
-              </ul>
-              </p>
-              <p><strong>Jenkins, H. &amp; Thorburn, D. (eds).</strong> (2003). <em>Democracy and new media.</em> Cambridge, Mass.: MIT Press.
-              <ul>
-              <li>This collection is an exploration of democracy and the new media technologies.  Chapters by a variety of authors explore major democratic themes including elections, journalism and citizenship.</li>
-              </ul>
-              </p>
-              <p><strong>Jenkins, H., et al.</strong> (2009). Confronting the Challenges of Participatory Culture: Media Education for the 21st Century. <em>The John D. and Catherine T. MacArthur Foundation Reports on Digital Media and Learning.</em> Cambridge, MA: The MIT Press. <a href="http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513623_Confronting_the_Challenges.pdf">http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262513623_Confronting_the_Challenges.pdf</a>
-              <ul>
-              <li>This report explains that new skills are required in participatory culture which involves the internet. The authors advocate for interventions through policy and pedagogy to ensure all youth have an opportunity to participate in the 21st Century. </li>
-              </ul>
-              </p>
-              <p><strong>Lessig, L.</strong> (1999). <em>Code and Other Laws of Cyberspace.</em> New York: Basic Books.
-              <ul>
-              <li>This books establishes that both programmers' code and law matter when it comes to cyberspace. People can be governed by code which is legal or technological.</li>
-              </ul>
-              </p>
-              <p><strong>MacKinnon, R.</strong> (2012). <em>Consent of the networked: The world-wide struggle for Internet freedom.</em> New York: Basic Books.
-              <ul>
-              <li>This book examines how the civil liberties and rights of internet users can be supported. MacKinnon calls for people to be active citizens of the web.  </li>
-              </ul>
-              </p>
-              <p><strong>Mozilla.</strong> Webmaker/Hive. <a href="https://wiki.mozilla.org/Webmaker/Hive">https://wiki.mozilla.org/Webmaker/Hive</a>
-              <ul>
-              <li>This wiki resource is the authoritative source for pointers to Hive resources. </li>
-              </ul>
-              </p>
-              <p><strong>Mozilla Hive New York.</strong> Hive Learning Networks. <a href="http://hivenyc.org/about-hive-nyc/hive-global/">http://hivenyc.org/about-hive-nyc/hive-global/</a>
-              <ul>
-              <li>Hive Learning Networks underpin a growing movement to put Connected  Learning principles into action. The networks’ laboratory approach and catalytic funding model re-imaginine how learning is organized and  supported across youth-serving organizations in urban centers and  includes three key elements: funded partnerships, cross-disciplinary  collaboration and the incubation of transformative learning experiences for youth.</li>
-              </ul>
-              </p>
-              <p><strong>New London Group.</strong> (1996). A pedagogy of multiliteracies: Designing social futures. <em>Harvard Education Review</em> 66(1), 60–92.
-              <ul>
-              <li>In this classic article, a collection of academics known as New London Group present a new approach that they call "multiliteracies." </li>
-              </ul>
-              </p>
-              <p><strong>Papert, S.</strong> (1980). <em>Mindstorms: Children, Computers, and Powerful Ideas.</em> New York: Basic Books.
-              <ul>
-              <li>This seminal work, still very relevant today, explains the ways children can learn to use computers in a masterful way. It also argues that learning to use computers can change the way they learn everything else. </li>
-              </ul>
-              </p>
-              <p><strong>Rheingold, H.</strong> (2012). <em>Net Smart: How to Thrive Online.</em> Cambridge, MA: MIT Press.
-              <ul>
-              <li>This book by cyberculture expert Howard Rheingold explains the concept  of 'networked individualism' and how we can use the web for personal empowerment.</li>
-              </ul>
-              </p>
-              <p><strong>Rushkoff, D.</strong> (2011). <em>Program or Be Programmed: Ten Commands for a Digital Age.</em> New York: O/R Books.
-              <ul>
-              <li>In this book, Douglas Rushkoff outlines a manifesto for the digital age - including the importance of learning to code.</li>
-              </ul>
-              </p>
-              <p><strong>Salen, K., et al.</strong> (2010). Quest to Learn: Developing the School for Digital Kids. <em>The John D. and Catherine T. MacArthur Foundation Reports on Digital Media and Learning.</em> Cambridge, MA: The MIT Press. <a href="http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262515658_Quest_to_Learn.pdf">http://mitpress.mit.edu/sites/default/files/titles/free_download/9780262515658_Quest_to_Learn.pdf</a>
-              <ul>
-              <li>This report gives an overview of an innovative school in New York City, using that gaming and game design as a new paradigm for curriculum and learning. </li>
-              </ul>
-              </p>
-              <p><strong>Santo, R.</strong> (2012). Hacker Literacies: Synthesizing Critical and Participatory Media Literacy Frameworks. <em>International Journal of Learning and Media.</em> 3(3), pp.1-5.
-              <ul>
-              <li>Researcher Rafi Santo outlines in this paper a new concept: Hacker Literacies. The  empowered participatory practices behind this notion take into account the malleability of sociotechnical spaces and the consequent actions that often result in the reformulation of these spaces</li>
-              </ul>
-              </p>
-              <p><strong>Udell, J.</strong> (2011) ‘Seven Ways to Think Like the Web’, Weblog, <a href="http://blog.jonudell.net/2011/01/24/seven-ways-to-think-like-the-web/">http://blog.jonudell.net/2011/01/24/seven-ways-to-think-like-the-web/</a>
-              <ul>
-              <li>In this post, Jon Udell approaches the web as an information system, suggesting seven ways in which we can (and should) think about it differently.</li>
-              </ul>
-              </p>
-              <p><strong>Wing, J.M.</strong> (2008). Computational Thinking and Thinking about Thinking. Philosophical Transactions of The Royal Society. 366. pp.3717-3725.
-              <ul>
-              <li>This article by expert Jeanette Wing outlines what computational thinking is and how it will influence every field in the future.</li>
-              </ul>
-              </p>
+              <h2 id="references">References</h2>
+
+              <p><strong>Abbott, A.</strong> (1997). Seven Types of Ambiguity. <em>Theory and Society</em>, 26(2-3), 357-391.</p>
+
+<p><strong>Audunson, R. &amp; Nordlie, R.</strong> (2003). Information Literacy: the case or non-case in Norway? <em>Library Review</em>, 52(7), 319-325.</p>
+
+<p><strong>Bayne, S. &amp; Ross, J.</strong> (2007). The 'digital native' and 'digital immigrant': a dangerous opposition. Paper presented at the <em>Annual Conference of the Society for Research into Higher Education</em>.</p>
+
+<p><strong>Bennett, S. Maton, K. &amp; Kervin, L.</strong> (2008). The 'digital natives' debate: A critical review of the evidence. <em>British Journal of Educational Technology</em>, 39(5), 775-786.</p>
+
+<p><strong>Bennett, S. &amp; Maton, K.</strong> (2010). Beyond the 'digital natives' debate: Towards a more nuanced understanding of students’ technology experiences. <em>Journal of Computer Assisted Learning</em>, 26(5), 321-331.</p>
+
+<p><strong>Carroll, L. </strong> (1865). Alice’s Adventures in Wonderland.  http://www.gutenberg.org/ebooks/11, accessed 30 December 2010.</p>
+
+<p><strong>Collins English Dictionary</strong>: Complete & Unabridged 10th Edition.</p>
+
+<p><strong>Dawkins, R.</strong> (1976). <em>The Selfish Gene</em>. Oxford University Press.</p>
+
+<p><strong>EC Thematic Portal</strong> - Digital Literacy: Skills for the Information Society. http://ec.europa.eu/information_society/tl/edutra/skills/index_en.htm, accessed 13 February 2011.</p>
+
+<p><strong>Empson, W.</strong> (1930). <em>Seven Types of Ambiguity</em>. Pimlico.</p>
+
+<p><strong>Erstad, O.</strong> (2003). Electracy as empowerment: Student activities in learning environments using technology. <em>Young</em>, 11(11), 11-28.</p>
+
+<p><strong>Gaston, J.</strong> (2006). Reaching and Teaching the Digital Natives. <em>Library Hi Tech News</em>, 3, 12-13.</p>
+
+<p><strong>Gilster, P.</strong> (1997). <em>Digital Literacy</em>. Wiley.</p>
+
+<p><strong>Johnson, S.</strong> (2008). Dawn of the digital natives. <em>The Guardian</em>. http://www.guardian.co.uk/technology/2008/feb/07/internet.literacy, accessed 5 January 2011.</p>
+
+<p><strong>Helsper, E. &amp; Enyon, R.</strong> (2009). Digital natives: where is the evidence? <em>British Educational Research Journal</em>, 36(3), 1-18.</p>
+
+<p><strong>JISC</strong>. (2009). Learning Literacies in a Digital Age. http://www.jisc.ac.uk/publications/briefingpapers/2009/learningliteraciesbp.aspx, accessed 7 January 2011.</p>
+
+<p><strong>Lankshear, C. &amp; Knobel, M.</strong> (2006). <em>New Literacies: Everyday Practices and Classroom Learning</em>. Oxford University Press.</p>
+
+<p><strong>Lankshear, C. &amp; Knobel, M.</strong> (2008). <em>Digital Literacies: Concepts, Policies and Practices</em>. Peter Lang.</p>
+
+<p><strong>Oxford English Dictionary</strong>. http://www.oed.com, accessed 8 April 2011.</p>
+
+<p><strong>Olson, K.</strong> (2005). Cyberspace as Place and the Limits of Metaphor. <em>Convergence: The International Journal of Research into New Media Technologies</em>, 11(1), 10-18.</p>
+
+<p><strong>Prensky, M.</strong> (2001). Digital natives, digital immigrants. <em>On The Horizon</em> 9(5), 1-6</p>
+
+<p><strong>Robinson, R.</strong> (1941). Ambiguity. <em>Mind</em>, 50(198), 140-155.</p>
+
+<p><strong>Rorty, R.</strong> (1989). The Contingency of Language. (in Russell Goodman (ed). 1995. <em>Pragmatism: A Contemporary Reader</em> Routledge).</p>
+
+<p><strong>Ryberg, R. &amp; Georgsen, M.</strong> (2010). Enabling Digital Literacy: Development of Meso-Level Pedagogical Approaches. <em>Nordic Journal of Digital Literacy</em>, 5(2), 88-100.</p>
+
+<p><strong>Wikipedia</strong>. Digital Native. http://en.wikipedia.org/wiki/Digital_native, accessed 4 January 2011.</p>
+
+-----
+              <p>Header image CC BY <a href="https://www.flickr.com/photos/wwworks/5381465403">woodleywonderworks</a></p>
             </div>
           </div>
         </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 ">
+
+              <h2 id="appendix">Appendix</h2>
+<img src="images/continuum.png" alt="Continuum of ambiguity" style="max-width:800px;" width="100%">
+
+
+             </div>
+          </div>
+        </div>
+
+
       </footer>
     </article>
   </main>
@@ -380,49 +256,5903 @@
       <div class="row">
         <div class="col-md-4 col-sm-6 col-xs-12 footer-license">
           <p>
-            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img style="padding-bottom:10px;" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><strong>Why Mozilla Cares About Web Literacy</strong></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="#" property="cc:attributionName" rel="cc:attributionURL">Doug Belshaw, Karen Smith, and the Mozilla community</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img style="padding-bottom:10px;" alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><a xmlns:cc="http://creativecommons.org/ns#" href="#" property="cc:attributionName" rel="cc:attributionURL">Belshaw, D.A.J. &amp; Higgins, S.</a> (2012). <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><strong>Digital literacy, digital natives, and the continuum of ambiguity</strong></span>. http://dougbelshaw.com/ambiguity.
           </p>
         </div>
 
         <div class="col-md-2 col-sm-3 col-xs-12 col-md-offset-4 footer-links">
-          <ul>
-            <li><i class="fa fa-twitter"></i><a href="https://twitter.com/search?q=%23webmaker&amp;src=typd"> Twitter</a></li>
-            <li><i class="fa fa-flickr"></i><a href="https://www.flickr.com/photos/mozilladrumbeat/galleries/"> Flickr</a></li>
-            <li><i class="fa fa-google-plus"></i><a href="https://plus.google.com/communities/106022863174952221205"> Google+</a></li>
+        <p><strong>Doug Belshaw</strong></p>
+<p><i class="fa fa-home"></i> <a href="https://dougbelshaw.com">Website</a></p>
+<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/dajbelshaw"> Twitter</a></p>
+<p><i class="fa fa-inbox"></i> <a href="mailto:doug@mozillafoundation.org">Email</a></p>
           </ul>
         </div>
 
         <div class="col-md-2 col-sm-3 col-xs-12 footer-links">
-          <ul>
-            <li><a href="https://webmaker.org/about">About Webmaker</a></li>
-            <li><a href="mailto:help@webmaker.org">Contact</a></li>
-            <li><a href="https://sendto.mozilla.org/page/contribute/EOYFR2013-newdefault?source=webmaker_whitepaper">Donate</a></li>
-          </ul>
+         <p><strong>Steve Higgins</strong></p>
+<p><i class="fa fa-home"></i> <a href="https://www.dur.ac.uk/education/staff/profile/?id=4444">Website</a></p>
+<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/profstig"> Twitter</a></p>
+<p><i class="fa fa-inbox"></i> <a href="mailto:s.e.higgins@durham.ac.uk">Email</a></p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- scripts -->
-  <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-  <script>
-    Tabzilla.disableEasterEgg();
-    $( '#page-menu' ).affix({
-      offset: {
-        top: $( '#page-menu' ).offset().top,
-        bottom: $( 'main > article > footer' ).outerHeight( true ) + $( 'body > footer' ).outerHeight( true )
-      }
-    });
-
-    $( 'a' ).on( 'click', function() {
-      $( 'html, body' ).animate({
-        scrollTop: $( $.attr( this, 'href' ) ).offset().top
-      }, 700 );
-
-      return false;
-    });
-  </script>
 </body>
+<style>
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700";
+
+@import "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css";
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+    font-family:Times New Roman,sans-serif;
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+
+body {
+    margin:0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {
+    display:block
+}
+
+audio,canvas,progress,video {
+    display:inline-block;
+    vertical-align:baseline
+}
+
+audio:not([controls]) {
+    display:none;
+    height:0
+}
+
+[hidden],template {
+    display:none
+}
+
+a {
+    background:transparent
+}
+
+a:active,a:hover {
+    outline:0
+}
+
+abbr[title] {
+    border-bottom:1px dotted
+}
+
+b,strong {
+    font-weight:700
+}
+
+dfn {
+    font-style:italic
+}
+
+h1 {
+    font-size:2em;
+    margin:.67em 0
+}
+
+mark {
+    background:#ff0;
+    color:#000
+}
+
+small {
+    font-size:80%
+}
+
+sub,sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline
+}
+
+sup {
+    top:-.5em
+}
+
+sub {
+    bottom:-.25em
+}
+
+img {
+    border:0
+}
+
+svg:not(:root) {
+    overflow:hidden
+}
+
+figure {
+    margin:1em 40px
+}
+
+hr {
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+    height:0
+}
+
+pre {
+    overflow:auto
+}
+
+code,kbd,pre,samp {
+    font-family:monospace,monospace;
+    font-size:1em
+}
+
+button,input,optgroup,select,textarea {
+    color:inherit;
+    font:inherit;
+    margin:0
+}
+
+button {
+    overflow:visible
+}
+
+button,select {
+    text-transform:none
+}
+
+button,html input[type="button"],input[type="reset"],input[type="submit"] {
+    -webkit-appearance:button;
+    cursor:pointer
+}
+
+button[disabled],html input[disabled] {
+    cursor:default
+}
+
+button::-moz-focus-inner,input::-moz-focus-inner {
+    border:0;
+    padding:0
+}
+
+input {
+    line-height:normal
+}
+
+input[type="checkbox"],input[type="radio"] {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0
+}
+
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+    height:auto
+}
+
+input[type="search"] {
+    -webkit-appearance:textfield;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance:none
+}
+
+fieldset {
+    border:1px solid silver;
+    margin:0 2px;
+    padding:.35em .625em .75em
+}
+
+legend {
+    border:0;
+    padding:0
+}
+
+textarea {
+    overflow:auto
+}
+
+optgroup {
+    font-weight:700
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+td,th {
+    padding:0
+}
+
+@media print {
+* {
+    text-shadow:none!important;
+    color:#000!important;
+    background:transparent!important;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important
+}
+
+a,a:visited {
+    text-decoration:underline
+}
+
+a[href]:after {
+    content:" (" attr(href) ")"
+}
+
+abbr[title]:after {
+    content:" (" attr(title) ")"
+}
+
+a[href^="javascript:"]:after,a[href^="#"]:after {
+    content:""
+}
+
+pre,blockquote {
+    border:1px solid #999;
+    page-break-inside:avoid
+}
+
+thead {
+    display:table-header-group
+}
+
+tr,img {
+    page-break-inside:avoid
+}
+
+img {
+    max-width:100%!important
+}
+
+p,h2,h3 {
+    orphans:3;
+    widows:3
+}
+
+h2,h3 {
+    page-break-after:avoid
+}
+
+select {
+    background:#fff!important
+}
+
+.navbar {
+    display:none
+}
+
+.table td,.table th {
+    background-color:#fff!important
+}
+
+.btn>.caret,.dropup>.btn>.caret {
+    border-top-color:#000!important
+}
+
+.label {
+    border:1px solid #000
+}
+
+.table {
+    border-collapse:collapse!important
+}
+
+.table-bordered th,.table-bordered td {
+    border:1px solid #ddd!important
+}
+}
+
+* {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+:before,:after {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+html {
+    font-size:62.5%;
+    -webkit-tap-highlight-color:rgba(0,0,0,0)
+}
+
+body {
+    font-family:Times New Roman,serif;
+    font-size:1.6em;
+    line-height:1.42857143;
+    color:#333;
+    background-color:#eee;
+}
+
+input,button,select,textarea {
+    font-family:inherit;
+    font-size:inherit;
+    line-height:inherit
+}
+
+a {
+    color:#27aae1;
+    text-decoration:none
+}
+
+a:hover,a:focus {
+    color:#177ba5;
+    text-decoration:underline
+}
+
+a:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px;
+    outline:none
+}
+
+figure {
+    margin:0
+}
+
+img {
+    vertical-align:middle
+}
+
+.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+    display:block;
+    max-width:100%;
+    height:auto
+}
+
+.img-rounded {
+    border-radius:0
+}
+
+.img-thumbnail {
+    padding:0;
+    line-height:1.42857143;
+    background-color:#fff;
+    border:1px solid none;
+    border-radius:0;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out;
+    display:inline-block;
+    max-width:100%;
+    height:auto
+}
+
+.img-circle {
+    border-radius:50%
+}
+
+hr {
+    margin-top:21px;
+    margin-bottom:21px;
+    border:0;
+    border-top:1px solid #eee
+}
+
+.sr-only {
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    border:0
+}
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
+    font-family:inherit;
+    font-weight:500;
+    line-height:1.1;
+    color:inherit
+}
+
+h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small {
+    font-weight:400;
+    line-height:1;
+    color:#999
+}
+
+h1,.h1,h2,.h2,h3,.h3 {
+    margin-top:21px;
+    margin-bottom:10.5px
+}
+
+h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small {
+    font-size:65%
+}
+
+h4,.h4,h5,.h5,h6,.h6 {
+    margin-top:10.5px;
+    margin-bottom:10.5px
+}
+
+h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small {
+    font-size:75%
+}
+
+h1,.h1 {
+    font-size:39px
+}
+
+h2,.h2 {
+    font-size:32px
+}
+
+h3,.h3 {
+    font-size:26px
+}
+
+h4,.h4 {
+    font-size:19px
+}
+
+h5,.h5 {
+    font-size:15px
+}
+
+h6,.h6 {
+    font-size:13px
+}
+
+p {
+    margin:0 0 10.5px
+}
+
+.lead {
+    margin-bottom:21px;
+    font-size:17px;
+    font-weight:200;
+    line-height:1.4
+}
+
+@media (min-width:768px) {
+.lead {
+    font-size:22.5px
+}
+}
+
+small,.small {
+    font-size:85%
+}
+
+cite {
+    font-style:normal
+}
+
+.text-left {
+    text-align:left
+}
+
+.text-right {
+    text-align:right
+}
+
+.text-center {
+    text-align:center
+}
+
+.text-justify {
+    text-align:justify
+}
+
+.text-muted {
+    color:#999
+}
+
+.text-primary {
+    color:#3fb58e
+}
+
+a.text-primary:hover {
+    color:#328f70
+}
+
+.text-success {
+    color:#3c763d
+}
+
+a.text-success:hover {
+    color:#2b542c
+}
+
+.text-info {
+    color:#31708f
+}
+
+a.text-info:hover {
+    color:#245269
+}
+
+.text-warning {
+    color:#8a6d3b
+}
+
+a.text-warning:hover {
+    color:#66512c
+}
+
+.text-danger {
+    color:#a94442
+}
+
+a.text-danger:hover {
+    color:#843534
+}
+
+.bg-primary {
+    color:#fff;
+    background-color:#3fb58e
+}
+
+a.bg-primary:hover {
+    background-color:#328f70
+}
+
+.bg-success {
+    background-color:#dff0d8
+}
+
+a.bg-success:hover {
+    background-color:#c1e2b3
+}
+
+.bg-info {
+    background-color:#d9edf7
+}
+
+a.bg-info:hover {
+    background-color:#afd9ee
+}
+
+.bg-warning {
+    background-color:#fcf8e3
+}
+
+a.bg-warning:hover {
+    background-color:#f7ecb5
+}
+
+.bg-danger {
+    background-color:#f2dede
+}
+
+a.bg-danger:hover {
+    background-color:#e4b9b9
+}
+
+.page-header {
+    padding-bottom:9.5px;
+    margin:42px 0 21px;
+    border-bottom:1px solid #eee
+}
+
+ul,ol {
+    margin-top:0;
+    margin-bottom:10.5px
+}
+
+ul ul,ol ul,ul ol,ol ol {
+    margin-bottom:0
+}
+
+.list-unstyled {
+    padding-left:0;
+    list-style:none
+}
+
+.list-inline {
+    padding-left:0;
+    list-style:none;
+    margin-left:-5px
+}
+
+.list-inline>li {
+    display:inline-block;
+    padding-left:5px;
+    padding-right:5px
+}
+
+dl {
+    margin-top:0;
+    margin-bottom:21px
+}
+
+dt,dd {
+    line-height:1.42857143
+}
+
+dt {
+    font-weight:700
+}
+
+dd {
+    margin-left:0
+}
+
+@media (min-width:768px) {
+.dl-horizontal dt {
+    float:left;
+    width:160px;
+    clear:left;
+    text-align:right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+
+.dl-horizontal dd {
+    margin-left:180px
+}
+}
+
+abbr[title],abbr[data-original-title] {
+    cursor:help;
+    border-bottom:1px dotted #999
+}
+
+.initialism {
+    font-size:90%;
+    text-transform:uppercase
+}
+
+blockquote {
+    padding:10.5px 21px;
+    margin:0 0 21px;
+    font-size:18.75px;
+    border-left:5px solid #eee
+}
+
+blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child {
+    margin-bottom:0
+}
+
+blockquote footer,blockquote small,blockquote .small {
+    display:block;
+    font-size:80%;
+    line-height:1.42857143;
+    color:#999
+}
+
+blockquote footer:before,blockquote small:before,blockquote .small:before {
+    content:'\2014 \00A0'
+}
+
+.blockquote-reverse,blockquote.pull-right {
+    padding-right:15px;
+    padding-left:0;
+    border-right:5px solid #eee;
+    border-left:0;
+    text-align:right
+}
+
+.blockquote-reverse footer:before,blockquote.pull-right footer:before,.blockquote-reverse small:before,blockquote.pull-right small:before,.blockquote-reverse .small:before,blockquote.pull-right .small:before {
+    content:''
+}
+
+.blockquote-reverse footer:after,blockquote.pull-right footer:after,.blockquote-reverse small:after,blockquote.pull-right small:after,.blockquote-reverse .small:after,blockquote.pull-right .small:after {
+    content:'\00A0 \2014'
+}
+
+blockquote:before,blockquote:after {
+    content:""
+}
+
+address {
+    margin-bottom:21px;
+    font-style:normal;
+    line-height:1.42857143
+}
+
+code,kbd,pre,samp {
+    font-family:Menlo,Monaco,Consolas,"Courier New",monospace
+}
+
+code {
+    padding:2px 4px;
+    font-size:90%;
+    color:#c7254e;
+    background-color:#f9f2f4;
+    white-space:nowrap;
+    border-radius:0
+}
+
+kbd {
+    padding:2px 4px;
+    font-size:90%;
+    color:#fff;
+    background-color:#333;
+    border-radius:0;
+    -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25);
+    box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25)
+}
+
+pre {
+    display:block;
+    padding:10px;
+    margin:0 0 10.5px;
+    font-size:14px;
+    line-height:1.42857143;
+    word-break:break-all;
+    word-wrap:break-word;
+    color:#333;
+    background-color:#f5f5f5;
+    border:1px solid #ccc;
+    border-radius:0
+}
+
+pre code {
+    padding:0;
+    font-size:inherit;
+    color:inherit;
+    white-space:pre-wrap;
+    background-color:transparent;
+    border-radius:0
+}
+
+.pre-scrollable {
+    max-height:340px;
+    overflow-y:scroll
+}
+
+.container {
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-right:15px
+}
+
+@media (min-width:768px) {
+.container {
+    width:750px
+}
+}
+
+@media (min-width:992px) {
+.container {
+    width:970px
+}
+}
+
+@media (min-width:1200px) {
+.container {
+    width:1170px
+}
+}
+
+.container-fluid {
+    margin-right:auto;
+    margin-left:auto;
+    padding-left:15px;
+    padding-right:15px
+}
+
+.row {
+    margin-left:-15px;
+    margin-right:-15px
+}
+
+.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12 {
+    position:relative;
+    min-height:1px;
+    padding-left:15px;
+    padding-right:15px
+}
+
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12 {
+    float:left
+}
+
+.col-xs-12 {
+    width:100%
+}
+
+.col-xs-11 {
+    width:91.66666667%
+}
+
+.col-xs-10 {
+    width:83.33333333%
+}
+
+.col-xs-9 {
+    width:75%
+}
+
+.col-xs-8 {
+    width:66.66666667%
+}
+
+.col-xs-7 {
+    width:58.33333333%
+}
+
+.col-xs-6 {
+    width:50%
+}
+
+.col-xs-5 {
+    width:41.66666667%
+}
+
+.col-xs-4 {
+    width:33.33333333%
+}
+
+.col-xs-3 {
+    width:25%
+}
+
+.col-xs-2 {
+    width:16.66666667%
+}
+
+.col-xs-1 {
+    width:8.33333333%
+}
+
+.col-xs-pull-12 {
+    right:100%
+}
+
+.col-xs-pull-11 {
+    right:91.66666667%
+}
+
+.col-xs-pull-10 {
+    right:83.33333333%
+}
+
+.col-xs-pull-9 {
+    right:75%
+}
+
+.col-xs-pull-8 {
+    right:66.66666667%
+}
+
+.col-xs-pull-7 {
+    right:58.33333333%
+}
+
+.col-xs-pull-6 {
+    right:50%
+}
+
+.col-xs-pull-5 {
+    right:41.66666667%
+}
+
+.col-xs-pull-4 {
+    right:33.33333333%
+}
+
+.col-xs-pull-3 {
+    right:25%
+}
+
+.col-xs-pull-2 {
+    right:16.66666667%
+}
+
+.col-xs-pull-1 {
+    right:8.33333333%
+}
+
+.col-xs-pull-0 {
+    right:0
+}
+
+.col-xs-push-12 {
+    left:100%
+}
+
+.col-xs-push-11 {
+    left:91.66666667%
+}
+
+.col-xs-push-10 {
+    left:83.33333333%
+}
+
+.col-xs-push-9 {
+    left:75%
+}
+
+.col-xs-push-8 {
+    left:66.66666667%
+}
+
+.col-xs-push-7 {
+    left:58.33333333%
+}
+
+.col-xs-push-6 {
+    left:50%
+}
+
+.col-xs-push-5 {
+    left:41.66666667%
+}
+
+.col-xs-push-4 {
+    left:33.33333333%
+}
+
+.col-xs-push-3 {
+    left:25%
+}
+
+.col-xs-push-2 {
+    left:16.66666667%
+}
+
+.col-xs-push-1 {
+    left:8.33333333%
+}
+
+.col-xs-push-0 {
+    left:0
+}
+
+.col-xs-offset-12 {
+    margin-left:100%
+}
+
+.col-xs-offset-11 {
+    margin-left:91.66666667%
+}
+
+.col-xs-offset-10 {
+    margin-left:83.33333333%
+}
+
+.col-xs-offset-9 {
+    margin-left:75%
+}
+
+.col-xs-offset-8 {
+    margin-left:66.66666667%
+}
+
+.col-xs-offset-7 {
+    margin-left:58.33333333%
+}
+
+.col-xs-offset-6 {
+    margin-left:50%
+}
+
+.col-xs-offset-5 {
+    margin-left:41.66666667%
+}
+
+.col-xs-offset-4 {
+    margin-left:33.33333333%
+}
+
+.col-xs-offset-3 {
+    margin-left:25%
+}
+
+.col-xs-offset-2 {
+    margin-left:16.66666667%
+}
+
+.col-xs-offset-1 {
+    margin-left:8.33333333%
+}
+
+.col-xs-offset-0 {
+    margin-left:0
+}
+
+@media (min-width:768px) {
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12 {
+    float:left
+}
+
+.col-sm-12 {
+    width:100%
+}
+
+.col-sm-11 {
+    width:91.66666667%
+}
+
+.col-sm-10 {
+    width:83.33333333%
+}
+
+.col-sm-9 {
+    width:75%
+}
+
+.col-sm-8 {
+    width:66.66666667%
+}
+
+.col-sm-7 {
+    width:58.33333333%
+}
+
+.col-sm-6 {
+    width:50%
+}
+
+.col-sm-5 {
+    width:41.66666667%
+}
+
+.col-sm-4 {
+    width:33.33333333%
+}
+
+.col-sm-3 {
+    width:25%
+}
+
+.col-sm-2 {
+    width:16.66666667%
+}
+
+.col-sm-1 {
+    width:8.33333333%
+}
+
+.col-sm-pull-12 {
+    right:100%
+}
+
+.col-sm-pull-11 {
+    right:91.66666667%
+}
+
+.col-sm-pull-10 {
+    right:83.33333333%
+}
+
+.col-sm-pull-9 {
+    right:75%
+}
+
+.col-sm-pull-8 {
+    right:66.66666667%
+}
+
+.col-sm-pull-7 {
+    right:58.33333333%
+}
+
+.col-sm-pull-6 {
+    right:50%
+}
+
+.col-sm-pull-5 {
+    right:41.66666667%
+}
+
+.col-sm-pull-4 {
+    right:33.33333333%
+}
+
+.col-sm-pull-3 {
+    right:25%
+}
+
+.col-sm-pull-2 {
+    right:16.66666667%
+}
+
+.col-sm-pull-1 {
+    right:8.33333333%
+}
+
+.col-sm-pull-0 {
+    right:0
+}
+
+.col-sm-push-12 {
+    left:100%
+}
+
+.col-sm-push-11 {
+    left:91.66666667%
+}
+
+.col-sm-push-10 {
+    left:83.33333333%
+}
+
+.col-sm-push-9 {
+    left:75%
+}
+
+.col-sm-push-8 {
+    left:66.66666667%
+}
+
+.col-sm-push-7 {
+    left:58.33333333%
+}
+
+.col-sm-push-6 {
+    left:50%
+}
+
+.col-sm-push-5 {
+    left:41.66666667%
+}
+
+.col-sm-push-4 {
+    left:33.33333333%
+}
+
+.col-sm-push-3 {
+    left:25%
+}
+
+.col-sm-push-2 {
+    left:16.66666667%
+}
+
+.col-sm-push-1 {
+    left:8.33333333%
+}
+
+.col-sm-push-0 {
+    left:0
+}
+
+.col-sm-offset-12 {
+    margin-left:100%
+}
+
+.col-sm-offset-11 {
+    margin-left:91.66666667%
+}
+
+.col-sm-offset-10 {
+    margin-left:83.33333333%
+}
+
+.col-sm-offset-9 {
+    margin-left:75%
+}
+
+.col-sm-offset-8 {
+    margin-left:66.66666667%
+}
+
+.col-sm-offset-7 {
+    margin-left:58.33333333%
+}
+
+.col-sm-offset-6 {
+    margin-left:50%
+}
+
+.col-sm-offset-5 {
+    margin-left:41.66666667%
+}
+
+.col-sm-offset-4 {
+    margin-left:33.33333333%
+}
+
+.col-sm-offset-3 {
+    margin-left:25%
+}
+
+.col-sm-offset-2 {
+    margin-left:16.66666667%
+}
+
+.col-sm-offset-1 {
+    margin-left:8.33333333%
+}
+
+.col-sm-offset-0 {
+    margin-left:0
+}
+}
+
+@media (min-width:992px) {
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12 {
+    float:left
+}
+
+.col-md-12 {
+    width:100%
+}
+
+.col-md-11 {
+    width:91.66666667%
+}
+
+.col-md-10 {
+    width:83.33333333%
+}
+
+.col-md-9 {
+    width:75%
+}
+
+.col-md-8 {
+    width:66.66666667%
+}
+
+.col-md-7 {
+    width:58.33333333%
+}
+
+.col-md-6 {
+    width:50%
+}
+
+.col-md-5 {
+    width:41.66666667%
+}
+
+.col-md-4 {
+    width:33.33333333%
+}
+
+.col-md-3 {
+    width:25%
+}
+
+.col-md-2 {
+    width:16.66666667%
+}
+
+.col-md-1 {
+    width:8.33333333%
+}
+
+.col-md-pull-12 {
+    right:100%
+}
+
+.col-md-pull-11 {
+    right:91.66666667%
+}
+
+.col-md-pull-10 {
+    right:83.33333333%
+}
+
+.col-md-pull-9 {
+    right:75%
+}
+
+.col-md-pull-8 {
+    right:66.66666667%
+}
+
+.col-md-pull-7 {
+    right:58.33333333%
+}
+
+.col-md-pull-6 {
+    right:50%
+}
+
+.col-md-pull-5 {
+    right:41.66666667%
+}
+
+.col-md-pull-4 {
+    right:33.33333333%
+}
+
+.col-md-pull-3 {
+    right:25%
+}
+
+.col-md-pull-2 {
+    right:16.66666667%
+}
+
+.col-md-pull-1 {
+    right:8.33333333%
+}
+
+.col-md-pull-0 {
+    right:0
+}
+
+.col-md-push-12 {
+    left:100%
+}
+
+.col-md-push-11 {
+    left:91.66666667%
+}
+
+.col-md-push-10 {
+    left:83.33333333%
+}
+
+.col-md-push-9 {
+    left:75%
+}
+
+.col-md-push-8 {
+    left:66.66666667%
+}
+
+.col-md-push-7 {
+    left:58.33333333%
+}
+
+.col-md-push-6 {
+    left:50%
+}
+
+.col-md-push-5 {
+    left:41.66666667%
+}
+
+.col-md-push-4 {
+    left:33.33333333%
+}
+
+.col-md-push-3 {
+    left:25%
+}
+
+.col-md-push-2 {
+    left:16.66666667%
+}
+
+.col-md-push-1 {
+    left:8.33333333%
+}
+
+.col-md-push-0 {
+    left:0
+}
+
+.col-md-offset-12 {
+    margin-left:100%
+}
+
+.col-md-offset-11 {
+    margin-left:91.66666667%
+}
+
+.col-md-offset-10 {
+    margin-left:83.33333333%
+}
+
+.col-md-offset-9 {
+    margin-left:75%
+}
+
+.col-md-offset-8 {
+    margin-left:66.66666667%
+}
+
+.col-md-offset-7 {
+    margin-left:58.33333333%
+}
+
+.col-md-offset-6 {
+    margin-left:50%
+}
+
+.col-md-offset-5 {
+    margin-left:41.66666667%
+}
+
+.col-md-offset-4 {
+    margin-left:33.33333333%
+}
+
+.col-md-offset-3 {
+    margin-left:25%
+}
+
+.col-md-offset-2 {
+    margin-left:16.66666667%
+}
+
+.col-md-offset-1 {
+    margin-left:8.33333333%
+}
+
+.col-md-offset-0 {
+    margin-left:0
+}
+}
+
+@media (min-width:1200px) {
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12 {
+    float:left
+}
+
+.col-lg-12 {
+    width:100%
+}
+
+.col-lg-11 {
+    width:91.66666667%
+}
+
+.col-lg-10 {
+    width:83.33333333%
+}
+
+.col-lg-9 {
+    width:75%
+}
+
+.col-lg-8 {
+    width:66.66666667%
+}
+
+.col-lg-7 {
+    width:58.33333333%
+}
+
+.col-lg-6 {
+    width:50%
+}
+
+.col-lg-5 {
+    width:41.66666667%
+}
+
+.col-lg-4 {
+    width:33.33333333%
+}
+
+.col-lg-3 {
+    width:25%
+}
+
+.col-lg-2 {
+    width:16.66666667%
+}
+
+.col-lg-1 {
+    width:8.33333333%
+}
+
+.col-lg-pull-12 {
+    right:100%
+}
+
+.col-lg-pull-11 {
+    right:91.66666667%
+}
+
+.col-lg-pull-10 {
+    right:83.33333333%
+}
+
+.col-lg-pull-9 {
+    right:75%
+}
+
+.col-lg-pull-8 {
+    right:66.66666667%
+}
+
+.col-lg-pull-7 {
+    right:58.33333333%
+}
+
+.col-lg-pull-6 {
+    right:50%
+}
+
+.col-lg-pull-5 {
+    right:41.66666667%
+}
+
+.col-lg-pull-4 {
+    right:33.33333333%
+}
+
+.col-lg-pull-3 {
+    right:25%
+}
+
+.col-lg-pull-2 {
+    right:16.66666667%
+}
+
+.col-lg-pull-1 {
+    right:8.33333333%
+}
+
+.col-lg-pull-0 {
+    right:0
+}
+
+.col-lg-push-12 {
+    left:100%
+}
+
+.col-lg-push-11 {
+    left:91.66666667%
+}
+
+.col-lg-push-10 {
+    left:83.33333333%
+}
+
+.col-lg-push-9 {
+    left:75%
+}
+
+.col-lg-push-8 {
+    left:66.66666667%
+}
+
+.col-lg-push-7 {
+    left:58.33333333%
+}
+
+.col-lg-push-6 {
+    left:50%
+}
+
+.col-lg-push-5 {
+    left:41.66666667%
+}
+
+.col-lg-push-4 {
+    left:33.33333333%
+}
+
+.col-lg-push-3 {
+    left:25%
+}
+
+.col-lg-push-2 {
+    left:16.66666667%
+}
+
+.col-lg-push-1 {
+    left:8.33333333%
+}
+
+.col-lg-push-0 {
+    left:0
+}
+
+.col-lg-offset-12 {
+    margin-left:100%
+}
+
+.col-lg-offset-11 {
+    margin-left:91.66666667%
+}
+
+.col-lg-offset-10 {
+    margin-left:83.33333333%
+}
+
+.col-lg-offset-9 {
+    margin-left:75%
+}
+
+.col-lg-offset-8 {
+    margin-left:66.66666667%
+}
+
+.col-lg-offset-7 {
+    margin-left:58.33333333%
+}
+
+.col-lg-offset-6 {
+    margin-left:50%
+}
+
+.col-lg-offset-5 {
+    margin-left:41.66666667%
+}
+
+.col-lg-offset-4 {
+    margin-left:33.33333333%
+}
+
+.col-lg-offset-3 {
+    margin-left:25%
+}
+
+.col-lg-offset-2 {
+    margin-left:16.66666667%
+}
+
+.col-lg-offset-1 {
+    margin-left:8.33333333%
+}
+
+.col-lg-offset-0 {
+    margin-left:0
+}
+}
+
+table {
+    max-width:100%;
+    background-color:transparent
+}
+
+th {
+    text-align:left
+}
+
+.table {
+    width:100%;
+    margin-bottom:21px
+}
+
+.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td {
+    padding:8px;
+    line-height:1.42857143;
+    vertical-align:top;
+    border-top:1px solid #ddd
+}
+
+.table>thead>tr>th {
+    vertical-align:bottom;
+    border-bottom:2px solid #ddd
+}
+
+.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>td {
+    border-top:0
+}
+
+.table>tbody+tbody {
+    border-top:2px solid #ddd
+}
+
+.table .table {
+    background-color:#fff
+}
+
+.table-condensed>thead>tr>th,.table-condensed>tbody>tr>th,.table-condensed>tfoot>tr>th,.table-condensed>thead>tr>td,.table-condensed>tbody>tr>td,.table-condensed>tfoot>tr>td {
+    padding:5px
+}
+
+.table-bordered {
+    border:1px solid #ddd
+}
+
+.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td {
+    border:1px solid #ddd
+}
+
+.table-bordered>thead>tr>th,.table-bordered>thead>tr>td {
+    border-bottom-width:2px
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th {
+    background-color:#f9f9f9
+}
+
+.table-hover>tbody>tr:hover>td,.table-hover>tbody>tr:hover>th {
+    background-color:#f5f5f5
+}
+
+table col[class*="col-"] {
+    position:static;
+    float:none;
+    display:table-column
+}
+
+table td[class*="col-"],table th[class*="col-"] {
+    position:static;
+    float:none;
+    display:table-cell
+}
+
+.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th {
+    background-color:#f5f5f5
+}
+
+.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr.active:hover>th {
+    background-color:#e8e8e8
+}
+
+.table>thead>tr>td.success,.table>tbody>tr>td.success,.table>tfoot>tr>td.success,.table>thead>tr>th.success,.table>tbody>tr>th.success,.table>tfoot>tr>th.success,.table>thead>tr.success>td,.table>tbody>tr.success>td,.table>tfoot>tr.success>td,.table>thead>tr.success>th,.table>tbody>tr.success>th,.table>tfoot>tr.success>th {
+    background-color:#dff0d8
+}
+
+.table-hover>tbody>tr>td.success:hover,.table-hover>tbody>tr>th.success:hover,.table-hover>tbody>tr.success:hover>td,.table-hover>tbody>tr.success:hover>th {
+    background-color:#d0e9c6
+}
+
+.table>thead>tr>td.info,.table>tbody>tr>td.info,.table>tfoot>tr>td.info,.table>thead>tr>th.info,.table>tbody>tr>th.info,.table>tfoot>tr>th.info,.table>thead>tr.info>td,.table>tbody>tr.info>td,.table>tfoot>tr.info>td,.table>thead>tr.info>th,.table>tbody>tr.info>th,.table>tfoot>tr.info>th {
+    background-color:#d9edf7
+}
+
+.table-hover>tbody>tr>td.info:hover,.table-hover>tbody>tr>th.info:hover,.table-hover>tbody>tr.info:hover>td,.table-hover>tbody>tr.info:hover>th {
+    background-color:#c4e3f3
+}
+
+.table>thead>tr>td.warning,.table>tbody>tr>td.warning,.table>tfoot>tr>td.warning,.table>thead>tr>th.warning,.table>tbody>tr>th.warning,.table>tfoot>tr>th.warning,.table>thead>tr.warning>td,.table>tbody>tr.warning>td,.table>tfoot>tr.warning>td,.table>thead>tr.warning>th,.table>tbody>tr.warning>th,.table>tfoot>tr.warning>th {
+    background-color:#fcf8e3
+}
+
+.table-hover>tbody>tr>td.warning:hover,.table-hover>tbody>tr>th.warning:hover,.table-hover>tbody>tr.warning:hover>td,.table-hover>tbody>tr.warning:hover>th {
+    background-color:#faf2cc
+}
+
+.table>thead>tr>td.danger,.table>tbody>tr>td.danger,.table>tfoot>tr>td.danger,.table>thead>tr>th.danger,.table>tbody>tr>th.danger,.table>tfoot>tr>th.danger,.table>thead>tr.danger>td,.table>tbody>tr.danger>td,.table>tfoot>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr.danger>th,.table>tfoot>tr.danger>th {
+    background-color:#f2dede
+}
+
+.table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr.danger:hover>th {
+    background-color:#ebcccc
+}
+
+@media (max-width:767px) {
+.table-responsive {
+    width:100%;
+    margin-bottom:15.75px;
+    overflow-y:hidden;
+    overflow-x:scroll;
+    -ms-overflow-style:-ms-autohiding-scrollbar;
+    border:1px solid #ddd;
+    -webkit-overflow-scrolling:touch
+}
+
+.table-responsive>.table {
+    margin-bottom:0
+}
+
+.table-responsive>.table>thead>tr>th,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>td {
+    white-space:nowrap
+}
+
+.table-responsive>.table-bordered {
+    border:0
+}
+
+.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+    border-left:0
+}
+
+.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+    border-right:0
+}
+
+.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>td {
+    border-bottom:0
+}
+}
+
+fieldset {
+    padding:0;
+    margin:0;
+    border:0;
+    min-width:0
+}
+
+legend {
+    display:block;
+    width:100%;
+    padding:0;
+    margin-bottom:21px;
+    font-size:22.5px;
+    line-height:inherit;
+    color:#333;
+    border:0;
+    border-bottom:1px solid #e5e5e5
+}
+
+label {
+    display:inline-block;
+    margin-bottom:5px;
+    font-weight:700
+}
+
+input[type="search"] {
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+input[type="radio"],input[type="checkbox"] {
+    margin:4px 0 0;
+    margin-top:1px \9;
+    line-height:normal
+}
+
+input[type="file"] {
+    display:block
+}
+
+input[type="range"] {
+    display:block;
+    width:100%
+}
+
+select[multiple],select[size] {
+    height:auto
+}
+
+input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px;
+    outline:none
+}
+
+output {
+    display:block;
+    padding-top:7px;
+    font-size:15px;
+    line-height:1.42857143;
+    color:#555
+}
+
+.form-control {
+    display:block;
+    width:100%;
+    height:35px;
+    padding:6px 12px;
+    font-size:15px;
+    line-height:1.42857143;
+    color:#555;
+    background-color:#fff;
+    background-image:none;
+    border:1px solid #ccc;
+    border-radius:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
+}
+
+.form-control:focus {
+    border-color:#66afe9;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6)
+}
+
+.form-control::-moz-placeholder {
+    color:#999;
+    opacity:1
+}
+
+.form-control:-ms-input-placeholder {
+    color:#999
+}
+
+.form-control::-webkit-input-placeholder {
+    color:#999
+}
+
+.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+    cursor:not-allowed;
+    background-color:#eee;
+    opacity:1
+}
+
+textarea.form-control {
+    height:auto
+}
+
+input[type="search"] {
+    -webkit-appearance:none
+}
+
+input[type="date"] {
+    line-height:35px
+}
+
+.form-group {
+    margin-bottom:15px
+}
+
+.radio,.checkbox {
+    display:block;
+    min-height:21px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:20px
+}
+
+.radio label,.checkbox label {
+    display:inline;
+    font-weight:400;
+    cursor:pointer
+}
+
+.radio input[type="radio"],.radio-inline input[type="radio"],.checkbox input[type="checkbox"],.checkbox-inline input[type="checkbox"] {
+    float:left;
+    margin-left:-20px
+}
+
+.radio+.radio,.checkbox+.checkbox {
+    margin-top:-5px
+}
+
+.radio-inline,.checkbox-inline {
+    display:inline-block;
+    padding-left:20px;
+    margin-bottom:0;
+    vertical-align:middle;
+    font-weight:400;
+    cursor:pointer
+}
+
+.radio-inline+.radio-inline,.checkbox-inline+.checkbox-inline {
+    margin-top:0;
+    margin-left:10px
+}
+
+input[type="radio"][disabled],input[type="checkbox"][disabled],.radio[disabled],.radio-inline[disabled],.checkbox[disabled],.checkbox-inline[disabled],fieldset[disabled] input[type="radio"],fieldset[disabled] input[type="checkbox"],fieldset[disabled] .radio,fieldset[disabled] .radio-inline,fieldset[disabled] .checkbox,fieldset[disabled] .checkbox-inline {
+    cursor:not-allowed
+}
+
+.input-sm {
+    height:31px;
+    padding:5px 10px;
+    font-size:13px;
+    line-height:1.5;
+    border-radius:0
+}
+
+select.input-sm {
+    height:31px;
+    line-height:31px
+}
+
+textarea.input-sm,select[multiple].input-sm {
+    height:auto
+}
+
+.input-lg {
+    height:48px;
+    padding:10px 16px;
+    font-size:19px;
+    line-height:1.33;
+    border-radius:0
+}
+
+select.input-lg {
+    height:48px;
+    line-height:48px
+}
+
+textarea.input-lg,select[multiple].input-lg {
+    height:auto
+}
+
+.has-feedback {
+    position:relative
+}
+
+.has-feedback .form-control {
+    padding-right:43.75px
+}
+
+.has-feedback .form-control-feedback {
+    position:absolute;
+    top:26px;
+    right:0;
+    display:block;
+    width:35px;
+    height:35px;
+    line-height:35px;
+    text-align:center
+}
+
+.has-success .help-block,.has-success .control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline {
+    color:#3c763d
+}
+
+.has-success .form-control {
+    border-color:#3c763d;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)
+}
+
+.has-success .form-control:focus {
+    border-color:#2b542c;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168
+}
+
+.has-success .input-group-addon {
+    color:#3c763d;
+    border-color:#3c763d;
+    background-color:#dff0d8
+}
+
+.has-success .form-control-feedback {
+    color:#3c763d
+}
+
+.has-warning .help-block,.has-warning .control-label,.has-warning .radio,.has-warning .checkbox,.has-warning .radio-inline,.has-warning .checkbox-inline {
+    color:#8a6d3b
+}
+
+.has-warning .form-control {
+    border-color:#8a6d3b;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)
+}
+
+.has-warning .form-control:focus {
+    border-color:#66512c;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b
+}
+
+.has-warning .input-group-addon {
+    color:#8a6d3b;
+    border-color:#8a6d3b;
+    background-color:#fcf8e3
+}
+
+.has-warning .form-control-feedback {
+    color:#8a6d3b
+}
+
+.has-error .help-block,.has-error .control-label,.has-error .radio,.has-error .checkbox,.has-error .radio-inline,.has-error .checkbox-inline {
+    color:#a94442
+}
+
+.has-error .form-control {
+    border-color:#a94442;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)
+}
+
+.has-error .form-control:focus {
+    border-color:#843534;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483
+}
+
+.has-error .input-group-addon {
+    color:#a94442;
+    border-color:#a94442;
+    background-color:#f2dede
+}
+
+.has-error .form-control-feedback {
+    color:#a94442
+}
+
+.form-control-static {
+    margin-bottom:0
+}
+
+.help-block {
+    display:block;
+    margin-top:5px;
+    margin-bottom:10px;
+    color:#737373
+}
+
+@media (min-width:768px) {
+.form-inline .form-group {
+    display:inline-block;
+    margin-bottom:0;
+    vertical-align:middle
+}
+
+.form-inline .form-control {
+    display:inline-block;
+    width:auto;
+    vertical-align:middle
+}
+
+.form-inline .input-group>.form-control {
+    width:100%
+}
+
+.form-inline .control-label {
+    margin-bottom:0;
+    vertical-align:middle
+}
+
+.form-inline .radio,.form-inline .checkbox {
+    display:inline-block;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+    vertical-align:middle
+}
+
+.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"] {
+    float:none;
+    margin-left:0
+}
+
+.form-inline .has-feedback .form-control-feedback {
+    top:0
+}
+}
+
+.form-horizontal .control-label,.form-horizontal .radio,.form-horizontal .checkbox,.form-horizontal .radio-inline,.form-horizontal .checkbox-inline {
+    margin-top:0;
+    margin-bottom:0;
+    padding-top:7px
+}
+
+.form-horizontal .radio,.form-horizontal .checkbox {
+    min-height:28px
+}
+
+.form-horizontal .form-group {
+    margin-left:-15px;
+    margin-right:-15px
+}
+
+.form-horizontal .form-control-static {
+    padding-top:7px
+}
+
+@media (min-width:768px) {
+.form-horizontal .control-label {
+    text-align:right
+}
+}
+
+.form-horizontal .has-feedback .form-control-feedback {
+    top:0;
+    right:15px
+}
+
+.btn {
+    display:inline-block;
+    margin-bottom:0;
+    font-weight:400;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    background-image:none;
+    border:1px solid transparent;
+    white-space:nowrap;
+    padding:6px 12px;
+    font-size:15px;
+    line-height:1.42857143;
+    border-radius:0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus {
+    outline:thin dotted;
+    outline:5px auto -webkit-focus-ring-color;
+    outline-offset:-2px;
+    outline:none
+}
+
+.btn:hover,.btn:focus {
+    color:#333;
+    text-decoration:none
+}
+
+.btn:active,.btn.active {
+    outline:0;
+    background-image:none;
+    -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)
+}
+
+.btn.disabled,.btn[disabled],fieldset[disabled] .btn {
+    cursor:not-allowed;
+    pointer-events:none;
+    opacity:.65;
+    filter:alpha(opacity=65);
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.btn-default {
+    color:#333;
+    background-color:#fff;
+    border-color:#ccc
+}
+
+.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default {
+    color:#333;
+    background-color:#ebebeb;
+    border-color:#adadad
+}
+
+.btn-default:active,.btn-default.active,.open .dropdown-toggle.btn-default {
+    background-image:none
+}
+
+.btn-default.disabled,.btn-default[disabled],fieldset[disabled] .btn-default,.btn-default.disabled:hover,.btn-default[disabled]:hover,fieldset[disabled] .btn-default:hover,.btn-default.disabled:focus,.btn-default[disabled]:focus,fieldset[disabled] .btn-default:focus,.btn-default.disabled:active,.btn-default[disabled]:active,fieldset[disabled] .btn-default:active,.btn-default.disabled.active,.btn-default[disabled].active,fieldset[disabled] .btn-default.active {
+    background-color:#fff;
+    border-color:#ccc
+}
+
+.btn-default .badge {
+    color:#fff;
+    background-color:#333
+}
+
+.btn-primary {
+    color:#fff;
+    background-color:#3fb58e;
+    border-color:#38a27f
+}
+
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+    color:#fff;
+    background-color:#349776;
+    border-color:#29755c
+}
+
+.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary {
+    background-image:none
+}
+
+.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active {
+    background-color:#3fb58e;
+    border-color:#38a27f
+}
+
+.btn-primary .badge {
+    color:#3fb58e;
+    background-color:#fff
+}
+
+.btn-success {
+    color:#fff;
+    background-color:#3fb58e;
+    border-color:#38a27f
+}
+
+.btn-success:hover,.btn-success:focus,.btn-success:active,.btn-success.active,.open .dropdown-toggle.btn-success {
+    color:#fff;
+    background-color:#349776;
+    border-color:#29755c
+}
+
+.btn-success:active,.btn-success.active,.open .dropdown-toggle.btn-success {
+    background-image:none
+}
+
+.btn-success.disabled,.btn-success[disabled],fieldset[disabled] .btn-success,.btn-success.disabled:hover,.btn-success[disabled]:hover,fieldset[disabled] .btn-success:hover,.btn-success.disabled:focus,.btn-success[disabled]:focus,fieldset[disabled] .btn-success:focus,.btn-success.disabled:active,.btn-success[disabled]:active,fieldset[disabled] .btn-success:active,.btn-success.disabled.active,.btn-success[disabled].active,fieldset[disabled] .btn-success.active {
+    background-color:#3fb58e;
+    border-color:#38a27f
+}
+
+.btn-success .badge {
+    color:#3fb58e;
+    background-color:#fff
+}
+
+.btn-info {
+    color:#fff;
+    background-color:#27aae1;
+    border-color:#1d9cd1
+}
+
+.btn-info:hover,.btn-info:focus,.btn-info:active,.btn-info.active,.open .dropdown-toggle.btn-info {
+    color:#fff;
+    background-color:#1b92c4;
+    border-color:#16749c
+}
+
+.btn-info:active,.btn-info.active,.open .dropdown-toggle.btn-info {
+    background-image:none
+}
+
+.btn-info.disabled,.btn-info[disabled],fieldset[disabled] .btn-info,.btn-info.disabled:hover,.btn-info[disabled]:hover,fieldset[disabled] .btn-info:hover,.btn-info.disabled:focus,.btn-info[disabled]:focus,fieldset[disabled] .btn-info:focus,.btn-info.disabled:active,.btn-info[disabled]:active,fieldset[disabled] .btn-info:active,.btn-info.disabled.active,.btn-info[disabled].active,fieldset[disabled] .btn-info.active {
+    background-color:#27aae1;
+    border-color:#1d9cd1
+}
+
+.btn-info .badge {
+    color:#27aae1;
+    background-color:#fff
+}
+
+.btn-warning {
+    color:#fff;
+    background-color:#ee8950;
+    border-color:#ec7939
+}
+
+.btn-warning:hover,.btn-warning:focus,.btn-warning:active,.btn-warning.active,.open .dropdown-toggle.btn-warning {
+    color:#fff;
+    background-color:#ea702b;
+    border-color:#d35914
+}
+
+.btn-warning:active,.btn-warning.active,.open .dropdown-toggle.btn-warning {
+    background-image:none
+}
+
+.btn-warning.disabled,.btn-warning[disabled],fieldset[disabled] .btn-warning,.btn-warning.disabled:hover,.btn-warning[disabled]:hover,fieldset[disabled] .btn-warning:hover,.btn-warning.disabled:focus,.btn-warning[disabled]:focus,fieldset[disabled] .btn-warning:focus,.btn-warning.disabled:active,.btn-warning[disabled]:active,fieldset[disabled] .btn-warning:active,.btn-warning.disabled.active,.btn-warning[disabled].active,fieldset[disabled] .btn-warning.active {
+    background-color:#ee8950;
+    border-color:#ec7939
+}
+
+.btn-warning .badge {
+    color:#ee8950;
+    background-color:#fff
+}
+
+.btn-danger {
+    color:#fff;
+    background-color:#eb5d52;
+    border-color:#e8483b
+}
+
+.btn-danger:hover,.btn-danger:focus,.btn-danger:active,.btn-danger.active,.open .dropdown-toggle.btn-danger {
+    color:#fff;
+    background-color:#e73b2d;
+    border-color:#ce2518
+}
+
+.btn-danger:active,.btn-danger.active,.open .dropdown-toggle.btn-danger {
+    background-image:none
+}
+
+.btn-danger.disabled,.btn-danger[disabled],fieldset[disabled] .btn-danger,.btn-danger.disabled:hover,.btn-danger[disabled]:hover,fieldset[disabled] .btn-danger:hover,.btn-danger.disabled:focus,.btn-danger[disabled]:focus,fieldset[disabled] .btn-danger:focus,.btn-danger.disabled:active,.btn-danger[disabled]:active,fieldset[disabled] .btn-danger:active,.btn-danger.disabled.active,.btn-danger[disabled].active,fieldset[disabled] .btn-danger.active {
+    background-color:#eb5d52;
+    border-color:#e8483b
+}
+
+.btn-danger .badge {
+    color:#eb5d52;
+    background-color:#fff
+}
+
+.btn-link {
+    color:#27aae1;
+    font-weight:400;
+    cursor:pointer;
+    border-radius:0
+}
+
+.btn-link,.btn-link:active,.btn-link[disabled],fieldset[disabled] .btn-link {
+    background-color:transparent;
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.btn-link,.btn-link:hover,.btn-link:focus,.btn-link:active {
+    border-color:transparent
+}
+
+.btn-link:hover,.btn-link:focus {
+    color:#177ba5;
+    text-decoration:underline;
+    background-color:transparent
+}
+
+.btn-link[disabled]:hover,fieldset[disabled] .btn-link:hover,.btn-link[disabled]:focus,fieldset[disabled] .btn-link:focus {
+    color:#999;
+    text-decoration:none
+}
+
+.btn-lg,.btn-group-lg>.btn {
+    padding:10px 16px;
+    font-size:19px;
+    line-height:1.33;
+    border-radius:0
+}
+
+.btn-sm,.btn-group-sm>.btn {
+    padding:5px 10px;
+    font-size:13px;
+    line-height:1.5;
+    border-radius:0
+}
+
+.btn-xs,.btn-group-xs>.btn {
+    padding:1px 5px;
+    font-size:13px;
+    line-height:1.5;
+    border-radius:0
+}
+
+.btn-block {
+    display:block;
+    width:100%;
+    padding-left:0;
+    padding-right:0
+}
+
+.btn-block+.btn-block {
+    margin-top:5px
+}
+
+input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block {
+    width:100%
+}
+
+.fade {
+    opacity:0;
+    -webkit-transition:opacity .15s linear;
+    transition:opacity .15s linear
+}
+
+.fade.in {
+    opacity:1
+}
+
+.collapse {
+    display:none
+}
+
+.collapse.in {
+    display:block
+}
+
+.collapsing {
+    position:relative;
+    height:0;
+    overflow:hidden;
+    -webkit-transition:height .35s ease;
+    transition:height .35s ease
+}
+
+.caret {
+    display:inline-block;
+    width:0;
+    height:0;
+    margin-left:2px;
+    vertical-align:middle;
+    border-top:4px solid;
+    border-right:4px solid transparent;
+    border-left:4px solid transparent
+}
+
+.dropdown {
+    position:relative
+}
+
+.dropdown-toggle:focus {
+    outline:0
+}
+
+.dropdown-menu {
+    position:absolute;
+    top:100%;
+    left:0;
+    z-index:1000;
+    display:none;
+    float:left;
+    min-width:160px;
+    padding:5px 0;
+    margin:2px 0 0;
+    list-style:none;
+    font-size:15px;
+    background-color:#fff;
+    border:1px solid #ccc;
+    border:1px solid rgba(0,0,0,0.15);
+    border-radius:0;
+    -webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    box-shadow:0 6px 12px rgba(0,0,0,0.175);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box
+}
+
+.dropdown-menu.pull-right {
+    right:0;
+    left:auto
+}
+
+.dropdown-menu .divider {
+    height:1px;
+    margin:9.5px 0;
+    overflow:hidden;
+    background-color:#e5e5e5
+}
+
+.dropdown-menu>li>a {
+    display:block;
+    padding:3px 20px;
+    clear:both;
+    font-weight:400;
+    line-height:1.42857143;
+    color:#333;
+    white-space:nowrap
+}
+
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus {
+    text-decoration:none;
+    color:#262626;
+    background-color:#f5f5f5
+}
+
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus {
+    color:#fff;
+    text-decoration:none;
+    outline:0;
+    background-color:#3fb58e
+}
+
+.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus {
+    color:#999
+}
+
+.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus {
+    text-decoration:none;
+    background-color:transparent;
+    background-image:none;
+    filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    cursor:not-allowed
+}
+
+.open>.dropdown-menu {
+    display:block
+}
+
+.open>a {
+    outline:0
+}
+
+.dropdown-menu-right {
+    left:auto;
+    right:0
+}
+
+.dropdown-menu-left {
+    left:0;
+    right:auto
+}
+
+.dropdown-header {
+    display:block;
+    padding:3px 20px;
+    font-size:13px;
+    line-height:1.42857143;
+    color:#999
+}
+
+.dropdown-backdrop {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    z-index:990
+}
+
+.pull-right>.dropdown-menu {
+    right:0;
+    left:auto
+}
+
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret {
+    border-top:0;
+    border-bottom:4px solid;
+    content:""
+}
+
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu {
+    top:auto;
+    bottom:100%;
+    margin-bottom:1px
+}
+
+@media (min-width:768px) {
+.navbar-right .dropdown-menu {
+    left:auto;
+    right:0
+}
+
+.navbar-right .dropdown-menu-left {
+    left:0;
+    right:auto
+}
+}
+
+.btn-group,.btn-group-vertical {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle
+}
+
+.btn-group>.btn,.btn-group-vertical>.btn {
+    position:relative;
+    float:left
+}
+
+.btn-group>.btn:hover,.btn-group-vertical>.btn:hover,.btn-group>.btn:focus,.btn-group-vertical>.btn:focus,.btn-group>.btn:active,.btn-group-vertical>.btn:active,.btn-group>.btn.active,.btn-group-vertical>.btn.active {
+    z-index:2
+}
+
+.btn-group>.btn:focus,.btn-group-vertical>.btn:focus {
+    outline:none
+}
+
+.btn-group .btn+.btn,.btn-group .btn+.btn-group,.btn-group .btn-group+.btn,.btn-group .btn-group+.btn-group {
+    margin-left:-1px
+}
+
+.btn-toolbar {
+    margin-left:-5px
+}
+
+.btn-toolbar .btn-group,.btn-toolbar .input-group {
+    float:left
+}
+
+.btn-toolbar>.btn,.btn-toolbar>.btn-group,.btn-toolbar>.input-group {
+    margin-left:5px
+}
+
+.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+    border-radius:0
+}
+
+.btn-group>.btn:first-child {
+    margin-left:0
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.btn-group>.btn:last-child:not(:first-child),.btn-group>.dropdown-toggle:not(:first-child) {
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.btn-group>.btn-group {
+    float:left
+}
+
+.btn-group>.btn-group:not(:first-child):not(:last-child)>.btn {
+    border-radius:0
+}
+
+.btn-group>.btn-group:first-child>.btn:last-child,.btn-group>.btn-group:first-child>.dropdown-toggle {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.btn-group>.btn-group:last-child>.btn:first-child {
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.btn-group .dropdown-toggle:active,.btn-group.open .dropdown-toggle {
+    outline:0
+}
+
+.btn-group>.btn+.dropdown-toggle {
+    padding-left:8px;
+    padding-right:8px
+}
+
+.btn-group>.btn-lg+.dropdown-toggle {
+    padding-left:12px;
+    padding-right:12px
+}
+
+.btn-group.open .dropdown-toggle {
+    -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);
+    box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)
+}
+
+.btn-group.open .dropdown-toggle.btn-link {
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.btn .caret {
+    margin-left:0
+}
+
+.btn-lg .caret {
+    border-width:5px 5px 0;
+    border-bottom-width:0
+}
+
+.dropup .btn-lg .caret {
+    border-width:0 5px 5px
+}
+
+.btn-group-vertical>.btn,.btn-group-vertical>.btn-group,.btn-group-vertical>.btn-group>.btn {
+    display:block;
+    float:none;
+    width:100%;
+    max-width:100%
+}
+
+.btn-group-vertical>.btn-group>.btn {
+    float:none
+}
+
+.btn-group-vertical>.btn+.btn,.btn-group-vertical>.btn+.btn-group,.btn-group-vertical>.btn-group+.btn,.btn-group-vertical>.btn-group+.btn-group {
+    margin-top:-1px;
+    margin-left:0
+}
+
+.btn-group-vertical>.btn:not(:first-child):not(:last-child) {
+    border-radius:0
+}
+
+.btn-group-vertical>.btn:first-child:not(:last-child) {
+    border-top-right-radius:0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0
+}
+
+.btn-group-vertical>.btn:last-child:not(:first-child) {
+    border-bottom-left-radius:0;
+    border-top-right-radius:0;
+    border-top-left-radius:0
+}
+
+.btn-group-vertical>.btn-group:not(:first-child):not(:last-child)>.btn {
+    border-radius:0
+}
+
+.btn-group-vertical>.btn-group:first-child:not(:last-child)>.btn:last-child,.btn-group-vertical>.btn-group:first-child:not(:last-child)>.dropdown-toggle {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0
+}
+
+.btn-group-vertical>.btn-group:last-child:not(:first-child)>.btn:first-child {
+    border-top-right-radius:0;
+    border-top-left-radius:0
+}
+
+.btn-group-justified {
+    display:table;
+    width:100%;
+    table-layout:fixed;
+    border-collapse:separate
+}
+
+.btn-group-justified>.btn,.btn-group-justified>.btn-group {
+    float:none;
+    display:table-cell;
+    width:1%
+}
+
+.btn-group-justified>.btn-group .btn {
+    width:100%
+}
+
+[data-toggle="buttons"]>.btn>input[type="radio"],[data-toggle="buttons"]>.btn>input[type="checkbox"] {
+    display:none
+}
+
+.input-group {
+    position:relative;
+    display:table;
+    border-collapse:separate
+}
+
+.input-group[class*="col-"] {
+    float:none;
+    padding-left:0;
+    padding-right:0
+}
+
+.input-group .form-control {
+    position:relative;
+    z-index:2;
+    float:left;
+    width:100%;
+    margin-bottom:0
+}
+
+.input-group-lg>.form-control,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.btn {
+    height:48px;
+    padding:10px 16px;
+    font-size:19px;
+    line-height:1.33;
+    border-radius:0
+}
+
+select.input-group-lg>.form-control,select.input-group-lg>.input-group-addon,select.input-group-lg>.input-group-btn>.btn {
+    height:48px;
+    line-height:48px
+}
+
+textarea.input-group-lg>.form-control,textarea.input-group-lg>.input-group-addon,textarea.input-group-lg>.input-group-btn>.btn,select[multiple].input-group-lg>.form-control,select[multiple].input-group-lg>.input-group-addon,select[multiple].input-group-lg>.input-group-btn>.btn {
+    height:auto
+}
+
+.input-group-sm>.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.btn {
+    height:31px;
+    padding:5px 10px;
+    font-size:13px;
+    line-height:1.5;
+    border-radius:0
+}
+
+select.input-group-sm>.form-control,select.input-group-sm>.input-group-addon,select.input-group-sm>.input-group-btn>.btn {
+    height:31px;
+    line-height:31px
+}
+
+textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon,textarea.input-group-sm>.input-group-btn>.btn,select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.input-group-addon,select[multiple].input-group-sm>.input-group-btn>.btn {
+    height:auto
+}
+
+.input-group-addon,.input-group-btn,.input-group .form-control {
+    display:table-cell
+}
+
+.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius:0
+}
+
+.input-group-addon,.input-group-btn {
+    width:1%;
+    white-space:nowrap;
+    vertical-align:middle
+}
+
+.input-group-addon {
+    padding:6px 12px;
+    font-size:15px;
+    font-weight:400;
+    line-height:1;
+    color:#555;
+    text-align:center;
+    background-color:#eee;
+    border:1px solid #ccc;
+    border-radius:0
+}
+
+.input-group-addon.input-sm {
+    padding:5px 10px;
+    font-size:13px;
+    border-radius:0
+}
+
+.input-group-addon.input-lg {
+    padding:10px 16px;
+    font-size:19px;
+    border-radius:0
+}
+
+.input-group-addon input[type="radio"],.input-group-addon input[type="checkbox"] {
+    margin-top:0
+}
+
+.input-group .form-control:first-child,.input-group-addon:first-child,.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group>.btn,.input-group-btn:first-child>.dropdown-toggle,.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),.input-group-btn:last-child>.btn-group:not(:last-child)>.btn {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.input-group-addon:first-child {
+    border-right:0
+}
+
+.input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group>.btn,.input-group-btn:last-child>.dropdown-toggle,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:first-child>.btn-group:not(:first-child)>.btn {
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.input-group-addon:last-child {
+    border-left:0
+}
+
+.input-group-btn {
+    position:relative;
+    font-size:0;
+    white-space:nowrap
+}
+
+.input-group-btn>.btn {
+    position:relative
+}
+
+.input-group-btn>.btn+.btn {
+    margin-left:-1px
+}
+
+.input-group-btn>.btn:hover,.input-group-btn>.btn:focus,.input-group-btn>.btn:active {
+    z-index:2
+}
+
+.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group {
+    margin-right:-1px
+}
+
+.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group {
+    margin-left:-1px
+}
+
+.nav {
+    margin-bottom:0;
+    padding-left:0;
+    list-style:none
+}
+
+.nav>li {
+    position:relative;
+    display:block
+}
+
+.nav>li>a {
+    position:relative;
+    display:block;
+    padding:10px 15px
+}
+
+.nav>li>a:hover,.nav>li>a:focus {
+    text-decoration:none;
+    background-color:#eee
+}
+
+.nav>li.disabled>a {
+    color:#999
+}
+
+.nav>li.disabled>a:hover,.nav>li.disabled>a:focus {
+    color:#999;
+    text-decoration:none;
+    background-color:transparent;
+    cursor:not-allowed
+}
+
+.nav .open>a,.nav .open>a:hover,.nav .open>a:focus {
+    background-color:#eee;
+    border-color:#27aae1
+}
+
+.nav .nav-divider {
+    height:1px;
+    margin:9.5px 0;
+    overflow:hidden;
+    background-color:#e5e5e5
+}
+
+.nav>li>a>img {
+    max-width:none
+}
+
+.nav-tabs {
+    border-bottom:1px solid #ddd
+}
+
+.nav-tabs>li {
+    float:left;
+    margin-bottom:-1px
+}
+
+.nav-tabs>li>a {
+    margin-right:2px;
+    line-height:1.42857143;
+    border:1px solid transparent;
+    border-radius:0 0 0 0
+}
+
+.nav-tabs>li>a:hover {
+    border-color:#eee #eee #ddd
+}
+
+.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus {
+    color:#555;
+    background-color:#fff;
+    border:1px solid #ddd;
+    border-bottom-color:transparent;
+    cursor:default
+}
+
+.nav-tabs.nav-justified {
+    width:100%;
+    border-bottom:0
+}
+
+.nav-tabs.nav-justified>li {
+    float:none
+}
+
+.nav-tabs.nav-justified>li>a {
+    text-align:center;
+    margin-bottom:5px
+}
+
+.nav-tabs.nav-justified>.dropdown .dropdown-menu {
+    top:auto;
+    left:auto
+}
+
+@media (min-width:768px) {
+.nav-tabs.nav-justified>li {
+    display:table-cell;
+    width:1%
+}
+
+.nav-tabs.nav-justified>li>a {
+    margin-bottom:0
+}
+}
+
+.nav-tabs.nav-justified>li>a {
+    margin-right:0;
+    border-radius:0
+}
+
+.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus {
+    border:1px solid #ddd
+}
+
+@media (min-width:768px) {
+.nav-tabs.nav-justified>li>a {
+    border-bottom:1px solid #ddd;
+    border-radius:0 0 0 0
+}
+
+.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus {
+    border-bottom-color:#fff
+}
+}
+
+.nav-pills>li {
+    float:left
+}
+
+.nav-pills>li>a {
+    border-radius:0
+}
+
+.nav-pills>li+li {
+    margin-left:2px
+}
+
+.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus {
+    color:#fff;
+    background-color:#3fb58e
+}
+
+.nav-stacked>li {
+    float:none
+}
+
+.nav-stacked>li+li {
+    margin-top:2px;
+    margin-left:0
+}
+
+.nav-justified {
+    width:100%
+}
+
+.nav-justified>li {
+    float:none
+}
+
+.nav-justified>li>a {
+    text-align:center;
+    margin-bottom:5px
+}
+
+.nav-justified>.dropdown .dropdown-menu {
+    top:auto;
+    left:auto
+}
+
+@media (min-width:768px) {
+.nav-justified>li {
+    display:table-cell;
+    width:1%
+}
+
+.nav-justified>li>a {
+    margin-bottom:0
+}
+}
+
+.nav-tabs-justified {
+    border-bottom:0
+}
+
+.nav-tabs-justified>li>a {
+    margin-right:0;
+    border-radius:0
+}
+
+.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus {
+    border:1px solid #ddd
+}
+
+@media (min-width:768px) {
+.nav-tabs-justified>li>a {
+    border-bottom:1px solid #ddd;
+    border-radius:0 0 0 0
+}
+
+.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus {
+    border-bottom-color:#fff
+}
+}
+
+.tab-content>.tab-pane {
+    display:none
+}
+
+.tab-content>.active {
+    display:block
+}
+
+.nav-tabs .dropdown-menu {
+    margin-top:-1px;
+    border-top-right-radius:0;
+    border-top-left-radius:0
+}
+
+.navbar {
+    position:relative;
+    min-height:50px;
+    margin-bottom:21px;
+    border:1px solid transparent
+}
+
+@media (min-width:768px) {
+.navbar {
+    border-radius:0
+}
+}
+
+@media (min-width:768px) {
+.navbar-header {
+    float:left
+}
+}
+
+.navbar-collapse {
+    max-height:340px;
+    overflow-x:visible;
+    padding-right:15px;
+    padding-left:15px;
+    border-top:1px solid transparent;
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);
+    -webkit-overflow-scrolling:touch
+}
+
+.navbar-collapse.in {
+    overflow-y:auto
+}
+
+@media (min-width:768px) {
+.navbar-collapse {
+    width:auto;
+    border-top:0;
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.navbar-collapse.collapse {
+    display:block!important;
+    height:auto!important;
+    padding-bottom:0;
+    overflow:visible!important
+}
+
+.navbar-collapse.in {
+    overflow-y:visible
+}
+
+.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse {
+    padding-left:0;
+    padding-right:0
+}
+}
+
+.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse {
+    margin-right:-15px;
+    margin-left:-15px
+}
+
+@media (min-width:768px) {
+.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse {
+    margin-right:0;
+    margin-left:0
+}
+}
+
+.navbar-static-top {
+    z-index:1000;
+    border-width:0 0 1px
+}
+
+@media (min-width:768px) {
+.navbar-static-top {
+    border-radius:0
+}
+}
+
+.navbar-fixed-top,.navbar-fixed-bottom {
+    position:fixed;
+    right:0;
+    left:0;
+    z-index:1030
+}
+
+@media (min-width:768px) {
+.navbar-fixed-top,.navbar-fixed-bottom {
+    border-radius:0
+}
+}
+
+.navbar-fixed-top {
+    top:0;
+    border-width:0 0 1px
+}
+
+.navbar-fixed-bottom {
+    bottom:0;
+    margin-bottom:0;
+    border-width:1px 0 0
+}
+
+.navbar-brand {
+    float:left;
+    padding:14.5px 15px;
+    font-size:19px;
+    line-height:21px;
+    height:50px
+}
+
+.navbar-brand:hover,.navbar-brand:focus {
+    text-decoration:none
+}
+
+@media (min-width:768px) {
+.navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand {
+    margin-left:-15px
+}
+}
+
+.navbar-toggle {
+    position:relative;
+    float:right;
+    margin-right:15px;
+    padding:9px 10px;
+    margin-top:8px;
+    margin-bottom:8px;
+    background-color:transparent;
+    background-image:none;
+    border:1px solid transparent;
+    border-radius:0
+}
+
+.navbar-toggle:focus {
+    outline:none
+}
+
+.navbar-toggle .icon-bar {
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top:4px
+}
+
+@media (min-width:768px) {
+.navbar-toggle {
+    display:none
+}
+}
+
+.navbar-nav {
+    margin:7.25px -15px
+}
+
+.navbar-nav>li>a {
+    padding-top:10px;
+    padding-bottom:10px;
+    line-height:21px
+}
+
+@media (max-width:767px) {
+.navbar-nav .open .dropdown-menu {
+    position:static;
+    float:none;
+    width:auto;
+    margin-top:0;
+    background-color:transparent;
+    border:0;
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.navbar-nav .open .dropdown-menu>li>a,.navbar-nav .open .dropdown-menu .dropdown-header {
+    padding:5px 15px 5px 25px
+}
+
+.navbar-nav .open .dropdown-menu>li>a {
+    line-height:21px
+}
+
+.navbar-nav .open .dropdown-menu>li>a:hover,.navbar-nav .open .dropdown-menu>li>a:focus {
+    background-image:none
+}
+}
+
+@media (min-width:768px) {
+.navbar-nav {
+    float:left;
+    margin:0
+}
+
+.navbar-nav>li {
+    float:left
+}
+
+.navbar-nav>li>a {
+    padding-top:14.5px;
+    padding-bottom:14.5px
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right:-15px
+}
+}
+
+@media (min-width:768px) {
+.navbar-left {
+    float:left!important
+}
+
+.navbar-right {
+    float:right!important
+}
+}
+
+.navbar-form {
+    margin-left:-15px;
+    margin-right:-15px;
+    padding:10px 15px;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+    -webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);
+    margin-top:7.5px;
+    margin-bottom:7.5px
+}
+
+@media (min-width:768px) {
+.navbar-form .form-group {
+    display:inline-block;
+    margin-bottom:0;
+    vertical-align:middle
+}
+
+.navbar-form .form-control {
+    display:inline-block;
+    width:auto;
+    vertical-align:middle
+}
+
+.navbar-form .input-group>.form-control {
+    width:100%
+}
+
+.navbar-form .control-label {
+    margin-bottom:0;
+    vertical-align:middle
+}
+
+.navbar-form .radio,.navbar-form .checkbox {
+    display:inline-block;
+    margin-top:0;
+    margin-bottom:0;
+    padding-left:0;
+    vertical-align:middle
+}
+
+.navbar-form .radio input[type="radio"],.navbar-form .checkbox input[type="checkbox"] {
+    float:none;
+    margin-left:0
+}
+
+.navbar-form .has-feedback .form-control-feedback {
+    top:0
+}
+}
+
+@media (max-width:767px) {
+.navbar-form .form-group {
+    margin-bottom:5px
+}
+}
+
+@media (min-width:768px) {
+.navbar-form {
+    width:auto;
+    border:0;
+    margin-left:0;
+    margin-right:0;
+    padding-top:0;
+    padding-bottom:0;
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.navbar-form.navbar-right:last-child {
+    margin-right:-15px
+}
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top:0;
+    border-top-right-radius:0;
+    border-top-left-radius:0
+}
+
+.navbar-fixed-bottom .navbar-nav>li>.dropdown-menu {
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0
+}
+
+.navbar-btn {
+    margin-top:7.5px;
+    margin-bottom:7.5px
+}
+
+.navbar-btn.btn-sm {
+    margin-top:9.5px;
+    margin-bottom:9.5px
+}
+
+.navbar-btn.btn-xs {
+    margin-top:14px;
+    margin-bottom:14px
+}
+
+.navbar-text {
+    margin-top:14.5px;
+    margin-bottom:14.5px
+}
+
+@media (min-width:768px) {
+.navbar-text {
+    float:left;
+    margin-left:15px;
+    margin-right:15px
+}
+
+.navbar-text.navbar-right:last-child {
+    margin-right:0
+}
+}
+
+.navbar-default {
+    background-color:#fff;
+    border-color:#eee
+}
+
+.navbar-default .navbar-brand {
+    color:#777
+}
+
+.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus {
+    color:#5e5e5e;
+    background-color:transparent
+}
+
+.navbar-default .navbar-text {
+    color:#777
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:#777
+}
+
+.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus {
+    color:#333;
+    background-color:transparent
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus {
+    color:#555;
+    background-color:#f6f8fa
+}
+
+.navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus {
+    color:#ccc;
+    background-color:transparent
+}
+
+.navbar-default .navbar-toggle {
+    border-color:#ddd
+}
+
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus {
+    background-color:#ddd
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#888
+}
+
+.navbar-default .navbar-collapse,.navbar-default .navbar-form {
+    border-color:#eee
+}
+
+.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus {
+    background-color:#f6f8fa;
+    color:#555
+}
+
+@media (max-width:767px) {
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color:#777
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+    color:#333;
+    background-color:transparent
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color:#555;
+    background-color:#f6f8fa
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+    color:#ccc;
+    background-color:transparent
+}
+}
+
+.navbar-default .navbar-link {
+    color:#777
+}
+
+.navbar-default .navbar-link:hover {
+    color:#333
+}
+
+.navbar-inverse {
+    background-color:#013e5f;
+    border-color:#01293e
+}
+
+.navbar-inverse .navbar-brand {
+    color:#fff
+}
+
+.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus {
+    color:#fff;
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-text {
+    color:#fff
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color:rgba(255,255,255,0.7)
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus {
+    color:#fff;
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus {
+    color:#fff;
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-nav>.disabled>a,.navbar-inverse .navbar-nav>.disabled>a:hover,.navbar-inverse .navbar-nav>.disabled>a:focus {
+    color:#026fab;
+    background-color:transparent
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color:transparent
+}
+
+.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color:#013e5f
+}
+
+.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form {
+    border-color:#01273c
+}
+
+.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus {
+    background-color:#01527d;
+    color:#fff
+}
+
+@media (max-width:767px) {
+.navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header {
+    border-color:#01293e
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color:#01293e
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+    color:rgba(255,255,255,0.7)
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
+    color:#fff;
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color:#fff;
+    background-color:#01527d
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus {
+    color:#026fab;
+    background-color:transparent
+}
+}
+
+.navbar-inverse .navbar-link {
+    color:rgba(255,255,255,0.7)
+}
+
+.navbar-inverse .navbar-link:hover {
+    color:#fff
+}
+
+.breadcrumb {
+    padding:8px 15px;
+    margin-bottom:21px;
+    list-style:none;
+    background-color:#f5f5f5;
+    border-radius:0
+}
+
+.breadcrumb>li {
+    display:inline-block
+}
+
+.breadcrumb>li+li:before {
+    content:"/\00a0";
+    padding:0 5px;
+    color:#ccc
+}
+
+.breadcrumb>.active {
+    color:#999
+}
+
+.pagination {
+    display:inline-block;
+    padding-left:0;
+    margin:21px 0;
+    border-radius:0
+}
+
+.pagination>li {
+    display:inline
+}
+
+.pagination>li>a,.pagination>li>span {
+    position:relative;
+    float:left;
+    padding:6px 12px;
+    line-height:1.42857143;
+    text-decoration:none;
+    color:#27aae1;
+    background-color:#fff;
+    border:1px solid #ddd;
+    margin-left:-1px
+}
+
+.pagination>li:first-child>a,.pagination>li:first-child>span {
+    margin-left:0;
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.pagination>li:last-child>a,.pagination>li:last-child>span {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.pagination>li>a:hover,.pagination>li>span:hover,.pagination>li>a:focus,.pagination>li>span:focus {
+    color:#177ba5;
+    background-color:#eee;
+    border-color:#ddd
+}
+
+.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus {
+    z-index:2;
+    color:#fff;
+    background-color:#3fb58e;
+    border-color:#3fb58e;
+    cursor:default
+}
+
+.pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus {
+    color:#999;
+    background-color:#fff;
+    border-color:#ddd;
+    cursor:not-allowed
+}
+
+.pagination-lg>li>a,.pagination-lg>li>span {
+    padding:10px 16px;
+    font-size:19px
+}
+
+.pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span {
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.pagination-lg>li:last-child>a,.pagination-lg>li:last-child>span {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.pagination-sm>li>a,.pagination-sm>li>span {
+    padding:5px 10px;
+    font-size:13px
+}
+
+.pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span {
+    border-bottom-left-radius:0;
+    border-top-left-radius:0
+}
+
+.pagination-sm>li:last-child>a,.pagination-sm>li:last-child>span {
+    border-bottom-right-radius:0;
+    border-top-right-radius:0
+}
+
+.pager {
+    padding-left:0;
+    margin:21px 0;
+    list-style:none;
+    text-align:center
+}
+
+.pager li {
+    display:inline
+}
+
+.pager li>a,.pager li>span {
+    display:inline-block;
+    padding:5px 14px;
+    background-color:#fff;
+    border:1px solid #ddd;
+    border-radius:15px
+}
+
+.pager li>a:hover,.pager li>a:focus {
+    text-decoration:none;
+    background-color:#eee
+}
+
+.pager .next>a,.pager .next>span {
+    float:right
+}
+
+.pager .previous>a,.pager .previous>span {
+    float:left
+}
+
+.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span {
+    color:#999;
+    background-color:#fff;
+    cursor:not-allowed
+}
+
+.label {
+    display:inline;
+    padding:.2em .6em .3em;
+    font-size:75%;
+    font-weight:700;
+    line-height:1;
+    color:#fff;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:baseline;
+    border-radius:.25em
+}
+
+.label[href]:hover,.label[href]:focus {
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer
+}
+
+.label:empty {
+    display:none
+}
+
+.btn .label {
+    position:relative;
+    top:-1px
+}
+
+.label-default {
+    background-color:#999
+}
+
+.label-default[href]:hover,.label-default[href]:focus {
+    background-color:gray
+}
+
+.label-primary {
+    background-color:#3fb58e
+}
+
+.label-primary[href]:hover,.label-primary[href]:focus {
+    background-color:#328f70
+}
+
+.label-success {
+    background-color:#3fb58e
+}
+
+.label-success[href]:hover,.label-success[href]:focus {
+    background-color:#328f70
+}
+
+.label-info {
+    background-color:#27aae1
+}
+
+.label-info[href]:hover,.label-info[href]:focus {
+    background-color:#1a8bbb
+}
+
+.label-warning {
+    background-color:#ee8950
+}
+
+.label-warning[href]:hover,.label-warning[href]:focus {
+    background-color:#e96a22
+}
+
+.label-danger {
+    background-color:#eb5d52
+}
+
+.label-danger[href]:hover,.label-danger[href]:focus {
+    background-color:#e63224
+}
+
+.badge {
+    display:inline-block;
+    min-width:10px;
+    padding:3px 7px;
+    font-size:13px;
+    font-weight:700;
+    color:#fff;
+    line-height:1;
+    vertical-align:baseline;
+    white-space:nowrap;
+    text-align:center;
+    background-color:#999;
+    border-radius:10px
+}
+
+.badge:empty {
+    display:none
+}
+
+.btn .badge {
+    position:relative;
+    top:-1px
+}
+
+.btn-xs .badge {
+    top:0;
+    padding:1px 5px
+}
+
+a.badge:hover,a.badge:focus {
+    color:#fff;
+    text-decoration:none;
+    cursor:pointer
+}
+
+a.list-group-item.active>.badge,.nav-pills>.active>a>.badge {
+    color:#27aae1;
+    background-color:#fff
+}
+
+.nav-pills>li>a>.badge {
+    margin-left:3px
+}
+
+.jumbotron {
+    padding:30px;
+    margin-bottom:30px;
+    color:#fff;
+    background-color:#ccc
+}
+
+.jumbotron h1,.jumbotron .h1 {
+    color:inherit
+}
+
+.jumbotron p {
+    margin-bottom:15px;
+    font-size:23px;
+    font-weight:200
+}
+
+.container .jumbotron {
+    border-radius:0
+}
+
+.jumbotron .container {
+    max-width:100%
+}
+
+@media screen and (min-width:768px) {
+.jumbotron {
+    padding-top:48px;
+    padding-bottom:48px
+}
+
+.container .jumbotron {
+    padding-left:60px;
+    padding-right:60px
+}
+
+.jumbotron h1,.jumbotron .h1 {
+    font-size:67.5px
+}
+}
+
+.thumbnail {
+    display:block;
+    padding:0;
+    margin-bottom:21px;
+    line-height:1.42857143;
+    background-color:#fff;
+    border:1px solid none;
+    border-radius:0;
+    -webkit-transition:all .2s ease-in-out;
+    transition:all .2s ease-in-out
+}
+
+.thumbnail>img,.thumbnail a>img {
+    margin-left:auto;
+    margin-right:auto
+}
+
+a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active {
+    border-color:#27aae1
+}
+
+.thumbnail .caption {
+    padding:12px;
+    color:#333
+}
+
+.alert {
+    padding:15px;
+    margin-bottom:21px;
+    border:1px solid transparent;
+    border-radius:0
+}
+
+.alert h4 {
+    margin-top:0;
+    color:inherit
+}
+
+.alert .alert-link {
+    font-weight:700
+}
+
+.alert>p,.alert>ul {
+    margin-bottom:0
+}
+
+.alert>p+p {
+    margin-top:5px
+}
+
+.alert-dismissable {
+    padding-right:35px
+}
+
+.alert-dismissable .close {
+    position:relative;
+    top:-2px;
+    right:-21px;
+    color:inherit
+}
+
+.alert-success {
+    background-color:#3fb58e;
+    border-color:#d6e9c6;
+    color:#fff
+}
+
+.alert-success hr {
+    border-top-color:#c9e2b3
+}
+
+.alert-success .alert-link {
+    color:#e6e6e6
+}
+
+.alert-info {
+    background-color:#fff2cc;
+    border-color:#bce8f1;
+    color:#4d4e53
+}
+
+.alert-info hr {
+    border-top-color:#a6e1ec
+}
+
+.alert-info .alert-link {
+    color:#343539
+}
+
+.alert-warning {
+    background-color:#ee8950;
+    border-color:#faebcc;
+    color:#fff
+}
+
+.alert-warning hr {
+    border-top-color:#f7e1b5
+}
+
+.alert-warning .alert-link {
+    color:#e6e6e6
+}
+
+.alert-danger {
+    background-color:#eb5d52;
+    border-color:#ebccd1;
+    color:#fff
+}
+
+.alert-danger hr {
+    border-top-color:#e4b9c0
+}
+
+.alert-danger .alert-link {
+    color:#e6e6e6
+}
+
+@-webkit-keyframes progress-bar-stripes {
+from {
+    background-position:40px 0
+}
+
+to {
+    background-position:0 0
+}
+}
+
+@keyframes progress-bar-stripes {
+from {
+    background-position:40px 0
+}
+
+to {
+    background-position:0 0
+}
+}
+
+.progress {
+    overflow:hidden;
+    height:21px;
+    margin-bottom:21px;
+    background-color:#f5f5f5;
+    border-radius:0;
+    -webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)
+}
+
+.progress-bar {
+    float:left;
+    width:0;
+    height:100%;
+    font-size:13px;
+    line-height:21px;
+    color:#fff;
+    text-align:center;
+    background-color:#3fb58e;
+    -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);
+    box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-transition:width .6s ease;
+    transition:width .6s ease
+}
+
+.progress-striped .progress-bar {
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    -webkit-background-size:40px 40px;
+    background-size:40px 40px
+}
+
+.progress.active .progress-bar {
+    -webkit-animation:progress-bar-stripes 2s linear infinite;
+    animation:progress-bar-stripes 2s linear infinite
+}
+
+.progress-bar-success {
+    background-color:#3fb58e
+}
+
+.progress-striped .progress-bar-success {
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)
+}
+
+.progress-bar-info {
+    background-color:#27aae1
+}
+
+.progress-striped .progress-bar-info {
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)
+}
+
+.progress-bar-warning {
+    background-color:#ee8950
+}
+
+.progress-striped .progress-bar-warning {
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)
+}
+
+.progress-bar-danger {
+    background-color:#eb5d52
+}
+
+.progress-striped .progress-bar-danger {
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);
+    background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)
+}
+
+.media,.media-body {
+    overflow:hidden;
+    zoom:1
+}
+
+.media,.media .media {
+    margin-top:15px
+}
+
+.media:first-child {
+    margin-top:0
+}
+
+.media-object {
+    display:block
+}
+
+.media-heading {
+    margin:0 0 5px
+}
+
+.media>.pull-left {
+    margin-right:10px
+}
+
+.media>.pull-right {
+    margin-left:10px
+}
+
+.media-list {
+    padding-left:0;
+    list-style:none
+}
+
+.list-group {
+    margin-bottom:20px;
+    padding-left:0
+}
+
+.list-group-item {
+    position:relative;
+    display:block;
+    padding:10px 15px;
+    margin-bottom:-1px;
+    background-color:#fff;
+    border:1px solid #ddd
+}
+
+.list-group-item:first-child {
+    border-top-right-radius:0;
+    border-top-left-radius:0
+}
+
+.list-group-item:last-child {
+    margin-bottom:0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0
+}
+
+.list-group-item>.badge {
+    float:right
+}
+
+.list-group-item>.badge+.badge {
+    margin-right:5px
+}
+
+a.list-group-item {
+    color:#555
+}
+
+a.list-group-item .list-group-item-heading {
+    color:#333
+}
+
+a.list-group-item:hover,a.list-group-item:focus {
+    text-decoration:none;
+    background-color:#f5f5f5
+}
+
+a.list-group-item.active,a.list-group-item.active:hover,a.list-group-item.active:focus {
+    z-index:2;
+    color:#fff;
+    background-color:#3fb58e;
+    border-color:#3fb58e
+}
+
+a.list-group-item.active .list-group-item-heading,a.list-group-item.active:hover .list-group-item-heading,a.list-group-item.active:focus .list-group-item-heading {
+    color:inherit
+}
+
+a.list-group-item.active .list-group-item-text,a.list-group-item.active:hover .list-group-item-text,a.list-group-item.active:focus .list-group-item-text {
+    color:#d1efe5
+}
+
+.list-group-item-success {
+    color:#3c763d;
+    background-color:#dff0d8
+}
+
+a.list-group-item-success {
+    color:#3c763d
+}
+
+a.list-group-item-success .list-group-item-heading {
+    color:inherit
+}
+
+a.list-group-item-success:hover,a.list-group-item-success:focus {
+    color:#3c763d;
+    background-color:#d0e9c6
+}
+
+a.list-group-item-success.active,a.list-group-item-success.active:hover,a.list-group-item-success.active:focus {
+    color:#fff;
+    background-color:#3c763d;
+    border-color:#3c763d
+}
+
+.list-group-item-info {
+    color:#31708f;
+    background-color:#d9edf7
+}
+
+a.list-group-item-info {
+    color:#31708f
+}
+
+a.list-group-item-info .list-group-item-heading {
+    color:inherit
+}
+
+a.list-group-item-info:hover,a.list-group-item-info:focus {
+    color:#31708f;
+    background-color:#c4e3f3
+}
+
+a.list-group-item-info.active,a.list-group-item-info.active:hover,a.list-group-item-info.active:focus {
+    color:#fff;
+    background-color:#31708f;
+    border-color:#31708f
+}
+
+.list-group-item-warning {
+    color:#8a6d3b;
+    background-color:#fcf8e3
+}
+
+a.list-group-item-warning {
+    color:#8a6d3b
+}
+
+a.list-group-item-warning .list-group-item-heading {
+    color:inherit
+}
+
+a.list-group-item-warning:hover,a.list-group-item-warning:focus {
+    color:#8a6d3b;
+    background-color:#faf2cc
+}
+
+a.list-group-item-warning.active,a.list-group-item-warning.active:hover,a.list-group-item-warning.active:focus {
+    color:#fff;
+    background-color:#8a6d3b;
+    border-color:#8a6d3b
+}
+
+.list-group-item-danger {
+    color:#a94442;
+    background-color:#f2dede
+}
+
+a.list-group-item-danger {
+    color:#a94442
+}
+
+a.list-group-item-danger .list-group-item-heading {
+    color:inherit
+}
+
+a.list-group-item-danger:hover,a.list-group-item-danger:focus {
+    color:#a94442;
+    background-color:#ebcccc
+}
+
+a.list-group-item-danger.active,a.list-group-item-danger.active:hover,a.list-group-item-danger.active:focus {
+    color:#fff;
+    background-color:#a94442;
+    border-color:#a94442
+}
+
+.list-group-item-heading {
+    margin-top:0;
+    margin-bottom:5px
+}
+
+.list-group-item-text {
+    margin-bottom:0;
+    line-height:1.3
+}
+
+.panel {
+    margin-bottom:21px;
+    background-color:#fff;
+    border:1px solid transparent;
+    border-radius:0;
+    -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.05);
+    box-shadow:0 1px 1px rgba(0,0,0,0.05)
+}
+
+.panel-body {
+    padding:15px
+}
+
+.panel-heading {
+    padding:10px 15px;
+    border-bottom:1px solid transparent;
+    border-top-right-radius:-1;
+    border-top-left-radius:-1
+}
+
+.panel-heading>.dropdown .dropdown-toggle {
+    color:inherit
+}
+
+.panel-title {
+    margin-top:0;
+    margin-bottom:0;
+    font-size:17px;
+    color:inherit
+}
+
+.panel-title>a {
+    color:inherit
+}
+
+.panel-footer {
+    padding:10px 15px;
+    background-color:#f5f5f5;
+    border-top:1px solid #ddd;
+    border-bottom-right-radius:-1;
+    border-bottom-left-radius:-1
+}
+
+.panel>.list-group {
+    margin-bottom:0
+}
+
+.panel>.list-group .list-group-item {
+    border-width:1px 0;
+    border-radius:0
+}
+
+.panel>.list-group:first-child .list-group-item:first-child {
+    border-top:0;
+    border-top-right-radius:-1;
+    border-top-left-radius:-1
+}
+
+.panel>.list-group:last-child .list-group-item:last-child {
+    border-bottom:0;
+    border-bottom-right-radius:-1;
+    border-bottom-left-radius:-1
+}
+
+.panel-heading+.list-group .list-group-item:first-child {
+    border-top-width:0
+}
+
+.panel>.table,.panel>.table-responsive>.table {
+    margin-bottom:0
+}
+
+.panel>.table:first-child,.panel>.table-responsive:first-child>.table:first-child {
+    border-top-right-radius:-1;
+    border-top-left-radius:-1
+}
+
+.panel>.table:first-child>thead:first-child>tr:first-child td:first-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:first-child,.panel>.table:first-child>tbody:first-child>tr:first-child td:first-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:first-child,.panel>.table:first-child>thead:first-child>tr:first-child th:first-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:first-child,.panel>.table:first-child>tbody:first-child>tr:first-child th:first-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:first-child {
+    border-top-left-radius:-1
+}
+
+.panel>.table:first-child>thead:first-child>tr:first-child td:last-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:last-child,.panel>.table:first-child>tbody:first-child>tr:first-child td:last-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:last-child,.panel>.table:first-child>thead:first-child>tr:first-child th:last-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:last-child,.panel>.table:first-child>tbody:first-child>tr:first-child th:last-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:last-child {
+    border-top-right-radius:-1
+}
+
+.panel>.table:last-child,.panel>.table-responsive:last-child>.table:last-child {
+    border-bottom-right-radius:-1;
+    border-bottom-left-radius:-1
+}
+
+.panel>.table:last-child>tbody:last-child>tr:last-child td:first-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:first-child,.panel>.table:last-child>tfoot:last-child>tr:last-child td:first-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:first-child,.panel>.table:last-child>tbody:last-child>tr:last-child th:first-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:first-child,.panel>.table:last-child>tfoot:last-child>tr:last-child th:first-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:first-child {
+    border-bottom-left-radius:-1
+}
+
+.panel>.table:last-child>tbody:last-child>tr:last-child td:last-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:last-child,.panel>.table:last-child>tfoot:last-child>tr:last-child td:last-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:last-child,.panel>.table:last-child>tbody:last-child>tr:last-child th:last-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:last-child,.panel>.table:last-child>tfoot:last-child>tr:last-child th:last-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:last-child {
+    border-bottom-right-radius:-1
+}
+
+.panel>.panel-body+.table,.panel>.panel-body+.table-responsive {
+    border-top:1px solid #ddd
+}
+
+.panel>.table>tbody:first-child>tr:first-child th,.panel>.table>tbody:first-child>tr:first-child td {
+    border-top:0
+}
+
+.panel>.table-bordered,.panel>.table-responsive>.table-bordered {
+    border:0
+}
+
+.panel>.table-bordered>thead>tr>th:first-child,.panel>.table-responsive>.table-bordered>thead>tr>th:first-child,.panel>.table-bordered>tbody>tr>th:first-child,.panel>.table-responsive>.table-bordered>tbody>tr>th:first-child,.panel>.table-bordered>tfoot>tr>th:first-child,.panel>.table-responsive>.table-bordered>tfoot>tr>th:first-child,.panel>.table-bordered>thead>tr>td:first-child,.panel>.table-responsive>.table-bordered>thead>tr>td:first-child,.panel>.table-bordered>tbody>tr>td:first-child,.panel>.table-responsive>.table-bordered>tbody>tr>td:first-child,.panel>.table-bordered>tfoot>tr>td:first-child,.panel>.table-responsive>.table-bordered>tfoot>tr>td:first-child {
+    border-left:0
+}
+
+.panel>.table-bordered>thead>tr>th:last-child,.panel>.table-responsive>.table-bordered>thead>tr>th:last-child,.panel>.table-bordered>tbody>tr>th:last-child,.panel>.table-responsive>.table-bordered>tbody>tr>th:last-child,.panel>.table-bordered>tfoot>tr>th:last-child,.panel>.table-responsive>.table-bordered>tfoot>tr>th:last-child,.panel>.table-bordered>thead>tr>td:last-child,.panel>.table-responsive>.table-bordered>thead>tr>td:last-child,.panel>.table-bordered>tbody>tr>td:last-child,.panel>.table-responsive>.table-bordered>tbody>tr>td:last-child,.panel>.table-bordered>tfoot>tr>td:last-child,.panel>.table-responsive>.table-bordered>tfoot>tr>td:last-child {
+    border-right:0
+}
+
+.panel>.table-bordered>thead>tr:first-child>td,.panel>.table-responsive>.table-bordered>thead>tr:first-child>td,.panel>.table-bordered>tbody>tr:first-child>td,.panel>.table-responsive>.table-bordered>tbody>tr:first-child>td,.panel>.table-bordered>thead>tr:first-child>th,.panel>.table-responsive>.table-bordered>thead>tr:first-child>th,.panel>.table-bordered>tbody>tr:first-child>th,.panel>.table-responsive>.table-bordered>tbody>tr:first-child>th {
+    border-bottom:0
+}
+
+.panel>.table-bordered>tbody>tr:last-child>td,.panel>.table-responsive>.table-bordered>tbody>tr:last-child>td,.panel>.table-bordered>tfoot>tr:last-child>td,.panel>.table-responsive>.table-bordered>tfoot>tr:last-child>td,.panel>.table-bordered>tbody>tr:last-child>th,.panel>.table-responsive>.table-bordered>tbody>tr:last-child>th,.panel>.table-bordered>tfoot>tr:last-child>th,.panel>.table-responsive>.table-bordered>tfoot>tr:last-child>th {
+    border-bottom:0
+}
+
+.panel>.table-responsive {
+    border:0;
+    margin-bottom:0
+}
+
+.panel-group {
+    margin-bottom:21px
+}
+
+.panel-group .panel {
+    margin-bottom:0;
+    border-radius:0;
+    overflow:hidden
+}
+
+.panel-group .panel+.panel {
+    margin-top:5px
+}
+
+.panel-group .panel-heading {
+    border-bottom:0
+}
+
+.panel-group .panel-heading+.panel-collapse .panel-body {
+    border-top:1px solid #ddd
+}
+
+.panel-group .panel-footer {
+    border-top:0
+}
+
+.panel-group .panel-footer+.panel-collapse .panel-body {
+    border-bottom:1px solid #ddd
+}
+
+.panel-default {
+    border-color:#ddd
+}
+
+.panel-default>.panel-heading {
+    color:#333;
+    background-color:#f5f5f5;
+    border-color:#ddd
+}
+
+.panel-default>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#ddd
+}
+
+.panel-default>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#ddd
+}
+
+.panel-primary {
+    border-color:#3fb58e
+}
+
+.panel-primary>.panel-heading {
+    color:#fff;
+    background-color:#3fb58e;
+    border-color:#3fb58e
+}
+
+.panel-primary>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#3fb58e
+}
+
+.panel-primary>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#3fb58e
+}
+
+.panel-success {
+    border-color:#d6e9c6
+}
+
+.panel-success>.panel-heading {
+    color:#3c763d;
+    background-color:#dff0d8;
+    border-color:#d6e9c6
+}
+
+.panel-success>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#d6e9c6
+}
+
+.panel-success>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#d6e9c6
+}
+
+.panel-info {
+    border-color:#bce8f1
+}
+
+.panel-info>.panel-heading {
+    color:#31708f;
+    background-color:#d9edf7;
+    border-color:#bce8f1
+}
+
+.panel-info>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#bce8f1
+}
+
+.panel-info>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#bce8f1
+}
+
+.panel-warning {
+    border-color:#faebcc
+}
+
+.panel-warning>.panel-heading {
+    color:#8a6d3b;
+    background-color:#fcf8e3;
+    border-color:#faebcc
+}
+
+.panel-warning>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#faebcc
+}
+
+.panel-warning>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#faebcc
+}
+
+.panel-danger {
+    border-color:#ebccd1
+}
+
+.panel-danger>.panel-heading {
+    color:#a94442;
+    background-color:#f2dede;
+    border-color:#ebccd1
+}
+
+.panel-danger>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#ebccd1
+}
+
+.panel-danger>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#ebccd1
+}
+
+.well {
+    min-height:20px;
+    padding:19px;
+    margin-bottom:20px;
+    background-color:#f5f5f5;
+    border:1px solid #e3e3e3;
+    border-radius:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,0.05)
+}
+
+.well blockquote {
+    border-color:#ddd;
+    border-color:rgba(0,0,0,0.15)
+}
+
+.well-lg {
+    padding:24px;
+    border-radius:0
+}
+
+.well-sm {
+    padding:9px;
+    border-radius:0
+}
+
+.close {
+    float:right;
+    font-size:22.5px;
+    font-weight:700;
+    line-height:1;
+    color:#000;
+    text-shadow:0 1px 0 #fff;
+    opacity:.2;
+    filter:alpha(opacity=20)
+}
+
+.close:hover,.close:focus {
+    color:#000;
+    text-decoration:none;
+    cursor:pointer;
+    opacity:.5;
+    filter:alpha(opacity=50)
+}
+
+button.close {
+    padding:0;
+    cursor:pointer;
+    background:transparent;
+    border:0;
+    -webkit-appearance:none
+}
+
+.modal-open {
+    overflow:hidden
+}
+
+.modal {
+    display:none;
+    overflow:auto;
+    overflow-y:scroll;
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:1050;
+    -webkit-overflow-scrolling:touch;
+    outline:0
+}
+
+.modal.fade .modal-dialog {
+    -webkit-transform:translate(0,-25%);
+    -ms-transform:translate(0,-25%);
+    transform:translate(0,-25%);
+    -webkit-transition:-webkit-transform .3s ease-out;
+    transition:transform .3s ease-out
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform:translate(0,0);
+    -ms-transform:translate(0,0);
+    transform:translate(0,0)
+}
+
+.modal-dialog {
+    position:relative;
+    width:auto;
+    margin:10px
+}
+
+.modal-content {
+    position:relative;
+    background-color:#fff;
+    border:1px solid #999;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:0;
+    -webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);
+    box-shadow:0 3px 9px rgba(0,0,0,0.5);
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    outline:none
+}
+
+.modal-backdrop {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:1040;
+    background-color:#000
+}
+
+.modal-backdrop.fade {
+    opacity:0;
+    filter:alpha(opacity=0)
+}
+
+.modal-backdrop.in {
+    opacity:.5;
+    filter:alpha(opacity=50)
+}
+
+.modal-header {
+    padding:15px;
+    border-bottom:1px solid #e5e5e5;
+    min-height:16.42857143px
+}
+
+.modal-header .close {
+    margin-top:-2px
+}
+
+.modal-title {
+    margin:0;
+    line-height:1.42857143
+}
+
+.modal-body {
+    position:relative;
+    padding:20px
+}
+
+.modal-footer {
+    margin-top:15px;
+    padding:19px 20px 20px;
+    text-align:right;
+    border-top:1px solid #e5e5e5
+}
+
+.modal-footer .btn+.btn {
+    margin-left:5px;
+    margin-bottom:0
+}
+
+.modal-footer .btn-group .btn+.btn {
+    margin-left:-1px
+}
+
+.modal-footer .btn-block+.btn-block {
+    margin-left:0
+}
+
+@media (min-width:768px) {
+.modal-dialog {
+    width:600px;
+    margin:30px auto
+}
+
+.modal-content {
+    -webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);
+    box-shadow:0 5px 15px rgba(0,0,0,0.5)
+}
+
+.modal-sm {
+    width:300px
+}
+}
+
+@media (min-width:992px) {
+.modal-lg {
+    width:900px
+}
+}
+
+.tooltip {
+    position:absolute;
+    z-index:1030;
+    display:block;
+    visibility:visible;
+    font-size:13px;
+    line-height:1.4;
+    opacity:0;
+    filter:alpha(opacity=0)
+}
+
+.tooltip.in {
+    opacity:.9;
+    filter:alpha(opacity=90)
+}
+
+.tooltip.top {
+    margin-top:-3px;
+    padding:5px 0
+}
+
+.tooltip.right {
+    margin-left:3px;
+    padding:0 5px
+}
+
+.tooltip.bottom {
+    margin-top:3px;
+    padding:5px 0
+}
+
+.tooltip.left {
+    margin-left:-3px;
+    padding:0 5px
+}
+
+.tooltip-inner {
+    max-width:200px;
+    padding:3px 8px;
+    color:#fff;
+    text-align:center;
+    text-decoration:none;
+    background-color:#000;
+    border-radius:0
+}
+
+.tooltip-arrow {
+    position:absolute;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+    border-width:5px 5px 0;
+    border-top-color:#000
+}
+
+.tooltip.top-left .tooltip-arrow {
+    bottom:0;
+    left:5px;
+    border-width:5px 5px 0;
+    border-top-color:#000
+}
+
+.tooltip.top-right .tooltip-arrow {
+    bottom:0;
+    right:5px;
+    border-width:5px 5px 0;
+    border-top-color:#000
+}
+
+.tooltip.right .tooltip-arrow {
+    top:50%;
+    left:0;
+    margin-top:-5px;
+    border-width:5px 5px 5px 0;
+    border-right-color:#000
+}
+
+.tooltip.left .tooltip-arrow {
+    top:50%;
+    right:0;
+    margin-top:-5px;
+    border-width:5px 0 5px 5px;
+    border-left-color:#000
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    border-width:0 5px 5px;
+    border-bottom-color:#000
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+    top:0;
+    left:5px;
+    border-width:0 5px 5px;
+    border-bottom-color:#000
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    top:0;
+    right:5px;
+    border-width:0 5px 5px;
+    border-bottom-color:#000
+}
+
+.popover {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:1010;
+    display:none;
+    max-width:276px;
+    padding:1px;
+    text-align:left;
+    background-color:#fff;
+    -webkit-background-clip:padding-box;
+    background-clip:padding-box;
+    border:1px solid #ccc;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:0;
+    -webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+    white-space:normal
+}
+
+.popover.top {
+    margin-top:-10px
+}
+
+.popover.right {
+    margin-left:10px
+}
+
+.popover.bottom {
+    margin-top:10px
+}
+
+.popover.left {
+    margin-left:-10px
+}
+
+.popover-title {
+    margin:0;
+    padding:8px 14px;
+    font-size:15px;
+    font-weight:400;
+    line-height:18px;
+    background-color:#f7f7f7;
+    border-bottom:1px solid #ebebeb;
+    border-radius:5px 5px 0 0
+}
+
+.popover-content {
+    padding:9px 14px
+}
+
+.popover>.arrow,.popover>.arrow:after {
+    position:absolute;
+    display:block;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid
+}
+
+.popover>.arrow {
+    border-width:11px
+}
+
+.popover>.arrow:after {
+    border-width:10px;
+    content:""
+}
+
+.popover.top>.arrow {
+    left:50%;
+    margin-left:-11px;
+    border-bottom-width:0;
+    border-top-color:#999;
+    border-top-color:rgba(0,0,0,0.25);
+    bottom:-11px
+}
+
+.popover.top>.arrow:after {
+    content:" ";
+    bottom:1px;
+    margin-left:-10px;
+    border-bottom-width:0;
+    border-top-color:#fff
+}
+
+.popover.right>.arrow {
+    top:50%;
+    left:-11px;
+    margin-top:-11px;
+    border-left-width:0;
+    border-right-color:#999;
+    border-right-color:rgba(0,0,0,0.25)
+}
+
+.popover.right>.arrow:after {
+    content:" ";
+    left:1px;
+    bottom:-10px;
+    border-left-width:0;
+    border-right-color:#fff
+}
+
+.popover.bottom>.arrow {
+    left:50%;
+    margin-left:-11px;
+    border-top-width:0;
+    border-bottom-color:#999;
+    border-bottom-color:rgba(0,0,0,0.25);
+    top:-11px
+}
+
+.popover.bottom>.arrow:after {
+    content:" ";
+    top:1px;
+    margin-left:-10px;
+    border-top-width:0;
+    border-bottom-color:#fff
+}
+
+.popover.left>.arrow {
+    top:50%;
+    right:-11px;
+    margin-top:-11px;
+    border-right-width:0;
+    border-left-color:#999;
+    border-left-color:rgba(0,0,0,0.25)
+}
+
+.popover.left>.arrow:after {
+    content:" ";
+    right:1px;
+    border-right-width:0;
+    border-left-color:#fff;
+    bottom:-10px
+}
+
+.carousel {
+    position:relative
+}
+
+.carousel-inner {
+    position:relative;
+    overflow:hidden;
+    width:100%
+}
+
+.carousel-inner>.item {
+    display:none;
+    position:relative;
+    -webkit-transition:.6s ease-in-out left;
+    transition:.6s ease-in-out left
+}
+
+.carousel-inner>.item>img,.carousel-inner>.item>a>img {
+    line-height:1
+}
+
+.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev {
+    display:block
+}
+
+.carousel-inner>.active {
+    left:0
+}
+
+.carousel-inner>.next,.carousel-inner>.prev {
+    position:absolute;
+    top:0;
+    width:100%
+}
+
+.carousel-inner>.next {
+    left:100%
+}
+
+.carousel-inner>.prev {
+    left:-100%
+}
+
+.carousel-inner>.next.left,.carousel-inner>.prev.right {
+    left:0
+}
+
+.carousel-inner>.active.left {
+    left:-100%
+}
+
+.carousel-inner>.active.right {
+    left:100%
+}
+
+.carousel-control {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:15%;
+    opacity:.5;
+    filter:alpha(opacity=50);
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(0,0,0,0.6)
+}
+
+.carousel-control.left {
+    background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.5) 0),color-stop(rgba(0,0,0,0.0001) 100%));
+    background-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,0.5)),to(rgba(0,0,0,0.0001)));
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);
+    background-image:linear-gradient(to right,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1)
+}
+
+.carousel-control.right {
+    left:auto;
+    right:0;
+    background-image:-webkit-linear-gradient(left,color-stop(rgba(0,0,0,0.0001) 0),color-stop(rgba(0,0,0,0.5) 100%));
+    background-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,0.0001)),to(rgba(0,0,0,0.5)));
+    background-image:-webkit-linear-gradient(left,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);
+    background-image:linear-gradient(to right,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1)
+}
+
+.carousel-control:hover,.carousel-control:focus {
+    outline:none;
+    color:#fff;
+    text-decoration:none;
+    opacity:.9;
+    filter:alpha(opacity=90)
+}
+
+.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right {
+    position:absolute;
+    top:50%;
+    z-index:5;
+    display:inline-block
+}
+
+.carousel-control .icon-prev,.carousel-control .glyphicon-chevron-left {
+    left:50%
+}
+
+.carousel-control .icon-next,.carousel-control .glyphicon-chevron-right {
+    right:50%
+}
+
+.carousel-control .icon-prev,.carousel-control .icon-next {
+    width:20px;
+    height:20px;
+    margin-top:-10px;
+    margin-left:-10px;
+    font-family:serif
+}
+
+.carousel-control .icon-prev:before {
+    content:'\2039'
+}
+
+.carousel-control .icon-next:before {
+    content:'\203a'
+}
+
+.carousel-indicators {
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    z-index:15;
+    width:60%;
+    margin-left:-30%;
+    padding-left:0;
+    list-style:none;
+    text-align:center
+}
+
+.carousel-indicators li {
+    display:inline-block;
+    width:10px;
+    height:10px;
+    margin:1px;
+    text-indent:-999px;
+    border:1px solid #fff;
+    border-radius:10px;
+    cursor:pointer;
+    background-color:#000 \9;
+    background-color:rgba(0,0,0,0)
+}
+
+.carousel-indicators .active {
+    margin:0;
+    width:12px;
+    height:12px;
+    background-color:#fff
+}
+
+.carousel-caption {
+    position:absolute;
+    left:15%;
+    right:15%;
+    bottom:20px;
+    z-index:10;
+    padding-top:20px;
+    padding-bottom:20px;
+    color:#fff;
+    text-align:center;
+    text-shadow:0 1px 2px rgba(0,0,0,0.6)
+}
+
+.carousel-caption .btn {
+    text-shadow:none
+}
+
+@media screen and (min-width:768px) {
+.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next {
+    width:30px;
+    height:30px;
+    margin-top:-15px;
+    margin-left:-15px;
+    font-size:30px
+}
+
+.carousel-caption {
+    left:20%;
+    right:20%;
+    padding-bottom:30px
+}
+
+.carousel-indicators {
+    bottom:20px
+}
+}
+
+.clearfix:before,.clearfix:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical>.btn-group:before,.btn-group-vertical>.btn-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-footer:before,.modal-footer:after {
+    content:" ";
+    display:table
+}
+
+.clearfix:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-footer:after {
+    clear:both
+}
+
+.center-block {
+    display:block;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.pull-right {
+    float:right!important
+}
+
+.pull-left {
+    float:left!important
+}
+
+.hide {
+    display:none!important
+}
+
+.show {
+    display:block!important
+}
+
+.invisible {
+    visibility:hidden
+}
+
+.text-hide {
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0
+}
+
+.hidden {
+    display:none!important;
+    visibility:hidden!important
+}
+
+.affix {
+    position:fixed
+}
+
+@-ms-viewport {
+    width:device-width
+}
+
+.visible-xs,.visible-sm,.visible-md,.visible-lg {
+    display:none!important
+}
+
+@media (max-width:767px) {
+.visible-xs {
+    display:block!important
+}
+
+table.visible-xs {
+    display:table
+}
+
+tr.visible-xs {
+    display:table-row!important
+}
+
+th.visible-xs,td.visible-xs {
+    display:table-cell!important
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.visible-sm {
+    display:block!important
+}
+
+table.visible-sm {
+    display:table
+}
+
+tr.visible-sm {
+    display:table-row!important
+}
+
+th.visible-sm,td.visible-sm {
+    display:table-cell!important
+}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+.visible-md {
+    display:block!important
+}
+
+table.visible-md {
+    display:table
+}
+
+tr.visible-md {
+    display:table-row!important
+}
+
+th.visible-md,td.visible-md {
+    display:table-cell!important
+}
+}
+
+@media (min-width:1200px) {
+.visible-lg {
+    display:block!important
+}
+
+table.visible-lg {
+    display:table
+}
+
+tr.visible-lg {
+    display:table-row!important
+}
+
+th.visible-lg,td.visible-lg {
+    display:table-cell!important
+}
+}
+
+@media (max-width:767px) {
+.hidden-xs {
+    display:none!important
+}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.hidden-sm {
+    display:none!important
+}
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+.hidden-md {
+    display:none!important
+}
+}
+
+@media (min-width:1200px) {
+.hidden-lg {
+    display:none!important
+}
+}
+
+.visible-print {
+    display:none!important
+}
+
+@media print {
+.visible-print {
+    display:block!important
+}
+
+table.visible-print {
+    display:table
+}
+
+tr.visible-print {
+    display:table-row!important
+}
+
+th.visible-print,td.visible-print {
+    display:table-cell!important
+}
+}
+
+@media print {
+.hidden-print {
+    display:none!important
+}
+}
+
+.btn-secondary {
+    color:#fff;
+    background-color:#013e5f;
+    border-color:#012e46
+}
+
+.btn-secondary:hover,.btn-secondary:focus,.btn-secondary:active,.btn-secondary.active,.open .dropdown-toggle.btn-secondary {
+    color:#fff;
+    background-color:#012437;
+    border-color:#000609
+}
+
+.btn-secondary:active,.btn-secondary.active,.open .dropdown-toggle.btn-secondary {
+    background-image:none
+}
+
+.btn-secondary.disabled,.btn-secondary[disabled],fieldset[disabled] .btn-secondary,.btn-secondary.disabled:hover,.btn-secondary[disabled]:hover,fieldset[disabled] .btn-secondary:hover,.btn-secondary.disabled:focus,.btn-secondary[disabled]:focus,fieldset[disabled] .btn-secondary:focus,.btn-secondary.disabled:active,.btn-secondary[disabled]:active,fieldset[disabled] .btn-secondary:active,.btn-secondary.disabled.active,.btn-secondary[disabled].active,fieldset[disabled] .btn-secondary.active {
+    background-color:#013e5f;
+    border-color:#012e46
+}
+
+.btn-secondary .badge {
+    color:#013e5f;
+    background-color:#fff
+}
+
+.dropdown-toggle {
+    cursor:pointer
+}
+
+.has-success .form-control:focus,.has-error .form-control:focus,.has-warning .form-control:focus {
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.form-control:focus {
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+
+.jumbotron {
+    background:#3fb58e;
+    background:-webkit-gradient(linear,left top,right top,color-stop(0,#3fb58e),color-stop(50%,#75c4a8),color-stop(100%,#3fb58e));
+    background:-webkit-linear-gradient(left,#3fb58e 0,#75c4a8 50%,#3fb58e 100%);
+    background:-webkit-gradient(linear,left top,right top,color-stop(0,#3fb58e),color-stop(50%,#75c4a8),to(#3fb58e));
+    background:linear-gradient(to right,#3fb58e 0,#75c4a8 50%,#3fb58e 100%);
+    background-attachment:fixed
+}
+
+@media screen and (min-width:768px) {
+.jumbotron {
+    padding-top:120px
+}
+}
+
+.jumbotron h1,.jumbotron p {
+    font-weight:300
+}
+
+.jumbotron a {
+    color:#fff;
+    text-decoration:underline
+}
+
+.navbar {
+    font-weight:300
+}
+
+.navbar-toggle {
+    color:#777
+}
+
+.navbar-inverse .navbar-toggle {
+    color:#fff
+}
+
+.navbar-inverse {
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    color:#FFF;
+    opacity:1
+}
+
+.text-light {
+    font-weight:300
+}
+
+.alert {
+    border:none
+}
+
+.list {
+    margin-left:0;
+    padding-left:15px
+}
+
+@media (min-width:768px) {
+.list {
+    padding-left:0
+}
+
+.list.list-inset {
+    padding-left:15px
+}
+}
+
+.list ul,.list ol {
+    padding-left:15px
+}
+
+.list li {
+    position:relative;
+    list-style:none
+}
+
+.list li:before {
+    min-width:15px;
+    margin-left:-15px;
+    position:absolute;
+    right:100%;
+    color:#999
+}
+
+ul.list>li:before,.list ul>li:before {
+    content:'\2022'
+}
+
+ol.list,.list ol {
+    counter-reset:ol-li
+}
+
+ol.list>li:before,.list ol>li:before {
+    text-align:right;
+    content:counter(ol-li) '.';
+    counter-increment:ol-li;
+    padding-right:7.5px
+}
+
+ol.list.list-alphabetical>li:before {
+    content:counter(ol-li, lower-alpha) '.'
+}
+
+hgroup {
+    margin-top:21px;
+    margin-bottom:21px
+}
+
+hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5,hgroup h6,hgroup .h1,hgroup .h2,hgroup .h3,hgroup .h4,hgroup .h5,hgroup .h6 {
+    margin-top:0;
+    margin-bottom:10.5px
+}
+
+.btn-mb-block {
+    display:block;
+    width:100%
+}
+
+@media (min-width:480px) {
+.btn-mb-block {
+    display:inline-block;
+    width:auto
+}
+}
+
+.panel-secure {
+    background:#fdfbf1;
+    border-color:#f6deac
+}
+
+.panel-secure>.panel-heading {
+    color:#8a6d3b;
+    background-color:#faebcc;
+    border-color:#f6deac
+}
+
+.panel-secure>.panel-heading+.panel-collapse .panel-body {
+    border-top-color:#f6deac
+}
+
+.panel-secure>.panel-footer+.panel-collapse .panel-body {
+    border-bottom-color:#f6deac
+}
+
+.panel-secure .form-control:focus {
+    border-color:#f6deac;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(246,222,172,0.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(246,222,172,0.6)
+}
+
+.panel-secure a {
+    color:#496DA5;
+    text-decoration:underline
+}
+
+.panel-secure a:hover {
+    color:#7795c3
+}
+
+.gallery {
+    background:#e3eaee;
+    padding:30px
+}
+
+.gallery-title {
+    margin-bottom:30px;
+    font-weight:300
+}
+
+.gallery-title small {
+    font-weight:300
+}
+
+.thumbnail {
+    -webkit-box-shadow:0 3px 3px -2px rgba(0,0,0,0.2);
+    box-shadow:0 3px 3px -2px rgba(0,0,0,0.2)
+}
+
+.thumbnail .caption h3 {
+    margin-top:0
+}
+
+.thumbnail-wrapper {
+    width:100%;
+    padding-bottom:100%;
+    height:0;
+    -webkit-background-size:cover cover;
+    background-size:cover
+}
+
+.wm-footer {
+    padding:60px 0;
+    background-color:#222;
+    color:#fff
+}
+
+.webmaker-logo img {
+    display:inline-block;
+    width:157px;
+    height:46px
+}
+
+@media (min-width:1200px) {
+.webmaker-logo img {
+    display:inline-block;
+    width:225px;
+    height:66px
+}
+}
+
+.user-info-avatar {
+    width:26px;
+    height:26px;
+    border-radius:26px
+}
+
+@media (min-width:768px) {
+.nav>li>.navbar-user-info {
+    height:50px;
+    line-height:26px;
+    padding:12px
+}
+}
+
+.nav>li>.navbar-user-info .user-info-avatar {
+    display:none
+}
+
+@media (min-width:768px) {
+.nav>li>.navbar-user-info .user-info-avatar {
+    display:inline
+}
+}
+
+body {
+    background-color:#333;
+    -webkit-background-size:cover cover;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-image:url(https://farm6.staticflickr.com/5003/5381465403_2a54cb7322_o.jpg)
+}
+
+.navbar-webmaker {
+    position:relative;
+    margin-bottom:0
+}
+
+.navbar-webmaker .webmaker-logo {
+    display:inline-block;
+    padding:2px 10px;
+    margin-top:8px
+}
+
+@media (min-width:768px) {
+.navbar-webmaker .webmaker-logo {
+    margin-top:5px
+}
+}
+
+@media (min-width:1200px) {
+.navbar-webmaker {
+    padding:12px 0;
+    height:90px
+}
+
+.navbar-webmaker .webmaker-logo {
+    margin-top:0;
+    padding:0
+}
+
+.navbar-webmaker .navbar-nav {
+    margin-top:6px
+}
+}
+
+.navbar .nav,.navbar .nav>li {
+    float:none;
+    display:inline-block;
+    *display:inline;
+    *zoom:1;
+    vertical-align:top
+}
+
+.navbar-inner {
+    text-align:center
+}
+
+.jumbotron {
+    margin:0 auto;
+    padding-top:5rem;
+    padding-bottom:5rem;
+    background:transparent
+}
+
+.jumbotron .title {
+    color:#4d4e53;
+    padding:0
+}
+
+main {
+    margin-top:40rem;
+    background:#fff
+}
+
+main h2 {
+    margin-top:4rem
+}
+
+main p {
+    line-height:1.8
+}
+
+main .well {
+    margin-top:2rem;
+    margin-bottom:2rem
+}
+
+main li {
+    padding:.3em
+}
+
+main footer {
+    background-color:#e3eaee;
+    margin-top:4rem;
+    padding-bottom:4rem;
+    margin-bottom:0;
+    font-size:12px;
+    z-index:2
+}
+
+main footer h2 {
+    font-size:1.8em
+}
+
+#webmaker-mentors,#weblitmap {
+    margin-top:4rem;
+    margin-bottom:4rem
+}
+
+footer.wm-footer {
+    background:#333;
+    z-index:2
+}
+
+footer.wm-footer .footer-links ul {
+    list-style:none
+}
+
+
+#page-menu {
+    margin-top:40px;
+    line-height:1.8;
+    font-size:1.6rem;
+    z-index:1
+}
+
+#page-menu.affix {
+    position:fixed;
+    top:0
+}
+
+#page-menu.affix-top {
+    position:absolute
+}
+
+#page-menu.affix-bottom {
+    position:absolute
+}
+
+#page-menu li {
+    background:none;
+    -webkit-transition:opacity .3s ease 0;
+    transition:opacity .3s ease 0;
+    opacity:.5
+}
+
+#page-menu li:hover,#page-menu li.active {
+    opacity:1;
+    background:none
+}
+
+#page-menu li:hover>a,#page-menu li.active>a,#page-menu li:hover>a:focus,#page-menu li.active>a:focus,#page-menu li:hover>a:hover,#page-menu li.active>a:hover,#page-menu li:hover>a:active,#page-menu li.active>a:active,#page-menu li:hover>a:visited,#page-menu li.active>a:visited {
+    background:none
+}
+
+
+</style>
 </html>
